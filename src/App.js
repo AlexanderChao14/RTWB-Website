@@ -1,10 +1,16 @@
 import {StyledHeading} from './components/styles/StyledHeading'
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
-      <StyledHeading className="text-green-800 underline">
+    <>
+      <NavBar/>
+        <StyledHeading className="text-green-800 underline">
         Hello world!
-      </StyledHeading>
+        </StyledHeading>
+      <Footer/>
+    </>
   );
 }
 

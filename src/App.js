@@ -1,16 +1,24 @@
-import {StyledHeading} from './components/styles/StyledHeading'
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+import {
+  BrowserRouter as Router, 
+  Routes,
+  Route
+} from 'react-router-dom'
+import Layout from './layout/Layout'
+import Home from './components/pages/Home'
+import AboutUs from './components/pages/AboutUs'
 
 function App() {
   return (
-    <>
-      <NavBar/>
-        <StyledHeading className="text-green-800 underline">
-        Hello world!
-        </StyledHeading>
-      <Footer/>
-    </>
+    <div>
+      <Router>
+          <Routes>
+            <Route path="/" element={<Layout/>}>
+              <Route path="/AboutUs" element={<AboutUs/>}/>
+              <Route index element={<Home/>}/>
+            </Route>
+          </Routes>
+      </Router>
+    </div>
   );
 }
 

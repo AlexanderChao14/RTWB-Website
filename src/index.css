@@ -15,3 +15,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* I like to work with sections in */
+section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* General container styling, we can change later */
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(157, 200, 94);
+  width: 90%;
+  min-height: 400px;
+  gap: 10px
+}
+
+/* For Grid items that align their content in the center */
+.gridItemCenter {
+  text-align: center;
+  background-color: aquamarine;
+  padding: 20px;
+  margin: 10px
+}
+
+/* The footer object for all webpages */
+.footer { 
+  background-color: rgb(95, 113, 167);
+  border-top: 8px solid rgb(151, 180, 188);
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+}
+
+/* A column or an item in the footer. Contains content within it */
+.footerCard {
+  /* background-color: rgb(215, 154, 40); */
+  /* border: 1px solid white; */
+  padding: 20px;
+}
+
+/* Styling for the lists in the footer */
+.footerList > li {
+  margin: 12px auto;
+}
+
+/* Hover functions  */
+.footerList > li :hover {
+  text-decoration: underline;
+  color: rgb(0, 51, 93);
+  font-weight: 600;
+}
+
+/* Styling for the list header */
+.listHeader {
+  font-weight: 700;
+  font-size: 24px;
+}

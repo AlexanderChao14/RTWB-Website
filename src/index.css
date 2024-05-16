@@ -21,14 +21,12 @@ section {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  padding: 100px 0px;
 }
 
 /* General container styling, we can change later */
 .container-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(157, 200, 94);
   width: 90%;
   min-height: 400px;
@@ -38,9 +36,19 @@ section {
 /* For Grid items that align their content in the center */
 .gridItemCenter {
   text-align: center;
-  background-color: aquamarine;
-  padding: 20px;
-  margin: 10px
+  align-items: center;
+}
+
+/* For Grid items that align their content to the left */
+.gridItemLeft {
+  text-align: left;
+  align-items: left;
+}
+
+/* For grid items that align their content to the right. */
+.gridItemRight {
+  text-align: right;
+  align-items: right;
 }
 
 /* The footer object for all webpages */
@@ -61,6 +69,7 @@ section {
   /* background-color: rgb(215, 154, 40); */
   /* border: 1px solid white; */
   padding: 20px;
+  justify-self: center;
 }
 
 /* Styling for the lists in the footer */

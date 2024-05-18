@@ -33,22 +33,32 @@ section {
   gap: 10px
 }
 
-/* For Grid items that align their content in the center */
-.gridItemCenter {
-  text-align: center;
-  align-items: center;
+/* Flex Items that go vertically */
+.flexItemColumn {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
 }
 
-/* For Grid items that align their content to the left */
-.gridItemLeft {
-  text-align: left;
-  align-items: left;
+/* The Container for the updates grid. */
+.updatesContainer {
+  width: 90%;
+  padding: 25px;
+  height: 800px;
 }
 
-/* For grid items that align their content to the right. */
-.gridItemRight {
-  text-align: right;
-  align-items: right;
+.updatesGrid {
+  display: grid;
+  background-color: rgb(157, 200, 94);
+  width: 90%;
+  height: 90%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 /* The footer object for all webpages */

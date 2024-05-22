@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
-//TODO: Need to see if theres a way I don't have to resuse all this code lol
-
-// For Flex items that are aligned to left
-export const FlexItemLeft = styled.div`
-    text-align: left;
-    align-items: left;
-`
-
-// For flex items that are aligned in center
-export const FlexItemCenter = styled.div`
-    text-align: center;
-    align-items: center;
-`
+export const MoreNewsCard = styled.div`
+    background-color: goldenrod;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    min-height: 350px;
+    width: 300px;
+`;
 
 

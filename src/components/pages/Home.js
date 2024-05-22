@@ -1,9 +1,9 @@
 import React from 'react'
 import {CardHeading, SectionHeading, StyledHeading} from '../styled/StyledHeading'
 import { GridStyle11, GridStyle12, GridStyle21 } from '../styled/GridStyles'
-import { FlexItemLeft, FlexItemCenter } from '../styled/ItemStyles'
 import { TextMedium } from '../styled/TextStyles'
 import { FlexboxColumnCenter } from '../styled/FlexboxStyles'
+import { MoreNewsCard } from '../styled/ItemStyles'
 
 
 
@@ -17,15 +17,15 @@ const Home = () => {
             {/* Introduction Section */}
             <section style={{backgroundColor: "orange"}}>   
                 <GridStyle11 className = "container-grid">
-                    <FlexItemLeft className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center">
                         <CardHeading>We are RTWB</CardHeading>
                         <TextMedium>Mission: Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>
                         <TextMedium>Vision: Create a united Respiratory Therapy culture synonymous with giving back.</TextMedium>
-                    </FlexItemLeft>
+                    </div>
 
-                    <FlexItemCenter className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center items-center">
                         <p>Picture goes here</p>
-                    </FlexItemCenter>
+                    </div>
 
                 </GridStyle11>
             </section>
@@ -33,30 +33,30 @@ const Home = () => {
             {/* About us Second Section*/}
             <section style={{backgroundColor: "orange"}}>
                 <GridStyle12 className="container-grid">
-                    <FlexItemLeft className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center">
                         <CardHeading>About us</CardHeading>
                         <TextMedium>RTWB is a collaborative project to educate and empower health care practitioners initiated by Respiratory Therapists around the globe.</TextMedium>
                         <div style={{backgroundColor: "steelblue", width:"30%"}}>Button: Learn More</div>
-                    </FlexItemLeft>
+                    </div>
 
-                    <FlexItemCenter className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center items-center">
                         <p>Picture goes here</p>
-                    </FlexItemCenter>
+                    </div>
                 </GridStyle12>
             </section>
             
             {/* Volunteer Section */}
             <section style={{backgroundColor: "orange"}}>
                 <GridStyle21 className="container-grid">
-                    <FlexItemCenter className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center items-center">
                         <CardHeading>Picture Goes Here</CardHeading>
-                    </FlexItemCenter>
+                    </div>
 
-                    <FlexItemLeft className="flexItemColumn">
+                    <div className="flex-item-dir-cols grid-item-center">
                         <CardHeading>Get Involved</CardHeading>
                         <TextMedium>Interested in contributing to our cause? See how you can help our charity here:</TextMedium>
                         <div style={{backgroundColor: "steelblue", width:"30%"}}>Button: Get Involved</div>
-                    </FlexItemLeft>
+                    </div>
                 </GridStyle21>
             </section>
 
@@ -65,41 +65,28 @@ const Home = () => {
                 <FlexboxColumnCenter className="updatesContainer">
                     <SectionHeading>Updates and More</SectionHeading>
                     <div className="updatesGrid">
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
-                        <FlexItemCenter className="flexItemColumn">
-                            <h1>Header</h1>
-                            <p>Description</p>
-                            <div>Read More</div>
-                        </FlexItemCenter>
+                        <MoreNewsCard className="grid-item-center items-center">
+                            <p>Picture here</p>
+                            <p>Hello World</p>
+                        </MoreNewsCard>
+
+                        <MoreNewsCard className="grid-item-center items-center">
+                            <p>Picture here</p>
+                            <p>Hello World</p>
+                        </MoreNewsCard>
+
+                        <MoreNewsCard className="grid-item-center items-center">
+                            <p>Picture here</p>
+                            <p>Hello World</p>
+                        </MoreNewsCard>
+                        <MoreNewsCard className="grid-item-center items-center">
+                            <p>Picture here</p>
+                            <p>Hello World</p>
+                        </MoreNewsCard>
+
+                       
+
+                       
                         
                     </div>
                 </FlexboxColumnCenter>

@@ -28,7 +28,6 @@ section {
 .container-grid {
   display: grid;
   background-color: rgb(157, 200, 94);
-  width: 90%;
   min-height: 400px;
   gap: 10px
 }
@@ -61,8 +60,6 @@ section {
 
 /* The Container for the updates grid. */
 .updatesContainer {
-  width: 90%;
-  padding: 25px;
   height: fit-content;
   background-color: steelblue;
 }

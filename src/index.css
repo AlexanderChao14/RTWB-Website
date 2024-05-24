@@ -44,18 +44,18 @@ section {
 /* Put grid items in the center of the cell */
 .grid-item-center {
   justify-self: center;
-  justify-content: center;
   align-self: center;
+  justify-content: center;
 }
 
-/* Align items left */
+/* justify items left */
 .items-left {
-  align-items: left;
+  justify-items: left;
 }
 
-/* align items center */
+/* justify items to center */
 .items-center {
-  align-items: center;
+  justify-items: center;
 }
 
 /* The Container for the updates grid. */
@@ -69,10 +69,11 @@ section {
   background-color: rgb(157, 200, 94);
   width: 80%;
   height: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
   gap: 20px;
   padding: 10px 0px;
+  margin: 20px 0px;
 }
 
 /* The footer object for all webpages */

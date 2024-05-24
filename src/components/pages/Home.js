@@ -4,6 +4,7 @@ import { GridStyle11, GridStyle12, GridStyle21 } from '../styled/GridStyles'
 import { TextMedium } from '../styled/TextStyles'
 import { FlexboxColumnCenter } from '../styled/FlexboxStyles'
 import { MoreNewsCard } from '../styled/ItemStyles'
+import InfoCard from '../InfoCard'
 
 
 
@@ -65,28 +66,14 @@ const Home = () => {
                 <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
                     <SectionHeading>Updates and More</SectionHeading>
                     <div className="updatesGrid">
-                        <MoreNewsCard className="grid-item-center items-center">
-                            <p>Picture here</p>
-                            <p>Hello World</p>
-                        </MoreNewsCard>
 
-                        <MoreNewsCard className="grid-item-center items-center">
-                            <p>Picture here</p>
-                            <p>Hello World</p>
-                        </MoreNewsCard>
+                        <InfoCard title="Meet the team" desc="Learn more about our incredible team."></InfoCard>
 
-                        <MoreNewsCard className="grid-item-center items-center">
-                            <p>Picture here</p>
-                            <p>Hello World</p>
-                        </MoreNewsCard>
-                        <MoreNewsCard className="grid-item-center items-center">
-                            <p>Picture here</p>
-                            <p>Hello World</p>
-                        </MoreNewsCard>
+                        <InfoCard title="Where we Work" desc="See where our charity is deployed around the world."></InfoCard>
 
-                       
-
-                       
+                        <InfoCard title="Updates and News" desc="See our latest milestones and news."></InfoCard>
+                        
+                        <InfoCard title="Sponsors" desc="Our gratitude for these amazing people."></InfoCard>
                         
                     </div>
                 </FlexboxColumnCenter>

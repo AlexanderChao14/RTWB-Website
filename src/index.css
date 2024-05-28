@@ -32,13 +32,31 @@ section {
   gap: 10px
 }
 
+/* Here I put the different grid templates. */
+
+/* For 1fr 2fr grid format*/
+.grid-cols-left {
+  grid-template-columns: 1fr 2fr;
+}
+
+/* For 1fr 1fr grid format */
+.grid-cols-even {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* for 2fr 1fr grid format */
+.grid-cols-right {
+  grid-template-columns: 2fr 1fr;
+}
+
 /* Flex Items with flex direction that go vertically */
 .flex-item-dir-cols {
   display: flex;
   flex-direction: column;
   background-color: aquamarine;
   width: 90%;
-  height: 90%;
+  min-height: 90%;
+  margin: 20px 0px;
 }
 
 /* Put grid items in the center of the cell */
@@ -64,6 +82,7 @@ section {
   background-color: steelblue;
 }
 
+/* Updates Grid for the landing page */
 .updatesGrid {
   display: grid;
   background-color: rgb(157, 200, 94);
@@ -115,8 +134,32 @@ section {
   font-size: 24px;
 }
 
+/* Media queries for page responsiveness. */
 @media (max-width: 1000px) {
   .updatesGrid {
     width: 100%;
+  }
+
+  /* Change the grid columns to a horizontal format */
+  .grid-cols-even, .grid-cols-left, .grid-cols-right {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* Adjust the right side format to match the others */
+  .grid-cols-right {
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  /* Container grid should fill up the entire screen for small screens */
+  .container-grid {
+    min-width: 100%;
+  }
+
+  /* Change the size of the items to avoid oversized items */
+  .flex-item-dir-cols {
+    margin: auto;
+    min-height: 250px;
   }
 }

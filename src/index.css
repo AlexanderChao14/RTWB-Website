@@ -20,8 +20,17 @@ code {
 section {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
-  padding: 100px 0px;
+  /* margin-bottom: 20px; */
+  padding: 50px 0px;
+  /* background-color: #a3bcf9; */
+}
+
+.sectioncolor-light {
+  background-color: #ffffff;
+}
+
+.sectioncolor-dark {
+  background-color: #385398;
 }
 
 /* General container styling, we can change later */
@@ -31,6 +40,33 @@ section {
   min-height: 400px;
   gap: 10px
 }
+
+.container-flexbox {
+  display: flex;
+  min-height: 400px;
+  /* background-color: rgb(157, 200, 94); */
+}
+
+.landing-intro {
+  background: url("D:\coding_workspace\rtwb\RTWB-Website\public\images\intro-photo.JPG") rgba(3, 126, 227, 0.864);
+  background-size: auto;
+  background-position-y: 25%;
+  background-position-x: 40%;
+  background-blend-mode: multiply;
+  min-height: 700px;
+}
+
+.intro-card {
+  height: 60%;
+}
+
+.card-image {
+  height: auto;
+  width: 400px;
+}
+
+/* Here I put the different flexbox templates */
+
 
 /* Here I put the different grid templates. */
 
@@ -53,10 +89,9 @@ section {
 .flex-item-dir-cols {
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
-  width: 90%;
-  min-height: 90%;
+  background-color: #7796CB;
   margin: 20px 0px;
+  padding: 20px;
 }
 
 /* Put grid items in the center of the cell */
@@ -85,7 +120,7 @@ section {
 /* Updates Grid for the landing page */
 .updatesGrid {
   display: grid;
-  background-color: rgb(157, 200, 94);
+  /* background-color: rgb(157, 200, 94); */
   width: 80%;
   height: 90%;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -161,5 +196,14 @@ section {
   .flex-item-dir-cols {
     margin: auto;
     min-height: 250px;
+    height: 90%;
+  }
+
+  .intro-card {
+    width: 90%;
+  }
+
+  .landing-intro {
+    min-height: 400px;
   }
 }

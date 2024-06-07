@@ -16,3 +16,7 @@ export const CardHeading = styled.h1`
 export const SectionHeading = styled.h1`
   font-size: 3em;
 `;
+
+export const PageHeading = styled.h1`
+  font-size: 4em;
+`

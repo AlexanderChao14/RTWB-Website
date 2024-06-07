@@ -36,17 +36,19 @@ section {
 /* General container styling, we can change later */
 .container-grid {
   display: grid;
-  background-color: rgb(157, 200, 94);
+  /* background-color: rgb(157, 200, 94); */
   min-height: 400px;
   gap: 10px
 }
 
+/* General container for flexbox */
 .container-flexbox {
   display: flex;
   min-height: 400px;
   /* background-color: rgb(157, 200, 94); */
 }
 
+/* The large section before all the content on the landing page. */
 .landing-intro {
   background: url("D:\coding_workspace\rtwb\RTWB-Website\public\images\intro-photo.JPG") rgba(3, 126, 227, 0.864);
   background-size: auto;
@@ -61,8 +63,9 @@ section {
 }
 
 .card-image {
-  height: auto;
-  width: 400px;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
 }
 
 /* Here I put the different flexbox templates */
@@ -92,6 +95,7 @@ section {
   background-color: #7796CB;
   margin: 20px 0px;
   padding: 20px;
+  max-height: 500px;
 }
 
 /* Put grid items in the center of the cell */

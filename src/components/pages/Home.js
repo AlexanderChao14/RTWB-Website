@@ -18,7 +18,7 @@ const Home = () => {
 
                 <div className = "container-flexbox justify-end mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                     <div className="flex-item-dir-cols grid-item-center w-1/2 intro-card">
-                        <CardHeading>We are RTWB</CardHeading>
+                        <CardHeading>We are Respiratory Therapists Without Borders</CardHeading>
                         <TextMedium>Mission: Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>
                         <TextMedium>Vision: Create a united Respiratory Therapy culture synonymous with giving back.</TextMedium>
                     </div>

@@ -50,12 +50,23 @@ section {
 
 /* The large section before all the content on the landing page. */
 .landing-intro {
-  background: url("D:\coding_workspace\rtwb\RTWB-Website\public\images\intro-photo.JPG") rgba(3, 126, 227, 0.864);
+  background: url("../public/images/intro-photo.JPG") rgba(3, 126, 227, 0.864);
   background-size: auto;
   background-position-y: 25%;
   background-position-x: 40%;
   background-blend-mode: multiply;
   min-height: 700px;
+}
+
+@media screen and (min-width:2048px ){
+  .landing-intro{
+  background: url("../public/images/intro-photo.JPG") rgba(227, 149, 3, 0.864);
+  background-size:cover;
+  background-position-y: 25%;
+  background-position-x: 40%;
+  background-blend-mode: multiply;
+  min-height: 700px;
+  }
 }
 
 .intro-card {

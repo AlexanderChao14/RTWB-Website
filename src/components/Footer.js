@@ -7,7 +7,7 @@ const Footer  = () =>{
             <div className="footerCard">
                 <p className="listHeader">Get Involved</p>
                 <ul className = "footerList">
-                    <li><a href="">Volunteer</a></li>
+                    <li><a href="">Join us</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Donate</a></li>
                     <li><a href="">Sponsors</a></li>

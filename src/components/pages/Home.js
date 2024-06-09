@@ -34,13 +34,13 @@ const Home = () => {
             {/* About us Second Section*/}
             <section className="sectioncolor-light">
                 <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                    <div className="flex-item-dir-cols grid-item-center w-11/12 h-full">
+                    <div className="flex-item-dir-cols grid-item-center w-full h-full">
                         <CardHeading>About us</CardHeading>
                         <TextMedium>RTWB is a collaborative project to educate and empower health care practitioners initiated by Respiratory Therapists around the globe.</TextMedium>
                         <div style={{backgroundColor: "steelblue", width:"30%"}}>Button: Learn More</div>
                     </div>
 
-                    <div className="flex-item-dir-cols grid-item-center items-center w-11/12 h-full">
+                    <div className="flex-item-dir-cols grid-item-center items-center w-full h-full">
                         <p>Picture goes here</p>
                     </div>
                 </div>
@@ -49,11 +49,11 @@ const Home = () => {
             {/* Volunteer Section */}
             <section>
                 <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                    <div className="flex-item-dir-cols grid-item-center items-center w-11/12 h-full">
+                    <div className="flex-item-dir-cols grid-item-center items-center w-full h-full">
                         <img src="images/get-involved-photo.jpg" className="card-image"/>
                     </div>
 
-                    <div className="flex-item-dir-cols grid-item-center w-11/12 h-full">
+                    <div className="flex-item-dir-cols grid-item-center w-full h-full">
                         <CardHeading>Get Involved</CardHeading>
                         <TextMedium>Interested in contributing to our cause? See how you can help our charity here:</TextMedium>
                         <div style={{backgroundColor: "steelblue", width:"30%"}}>Button: Get Involved</div>
@@ -63,7 +63,7 @@ const Home = () => {
 
             {/* Make a dynamic grid here for more sections */}
             <section className="sectioncolor-dark">
-                <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+                <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                     <SectionHeading className="text-center">Updates and More</SectionHeading>
                     <div className="updatesGrid">
 

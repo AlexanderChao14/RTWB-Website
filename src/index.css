@@ -38,7 +38,7 @@ section {
   display: grid;
   /* background-color: rgb(157, 200, 94); */
   min-height: 400px;
-  gap: 10px
+  gap: 30px
 }
 
 /* General container for flexbox */
@@ -130,13 +130,14 @@ section {
 .updatesContainer {
   height: fit-content;
   background-color: steelblue;
+  width: 75%;
 }
 
 /* Updates Grid for the landing page */
 .updatesGrid {
   display: grid;
   /* background-color: rgb(157, 200, 94); */
-  width: 80%;
+  width: 85%;
   height: 90%;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
@@ -186,7 +187,7 @@ section {
 
 /* Media queries for page responsiveness. */
 @media (max-width: 1000px) {
-  .updatesGrid {
+  .updatesGrid, .updatesContainer {
     width: 100%;
   }
 

@@ -146,6 +146,14 @@ section {
   margin: 20px 0px;
 }
 
+.teamsGrid {
+  height: fit-content;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));;
+  grid-template-rows: repeat(1fr);
+  padding: 20px 0px;
+}
+
 /* The footer object for all webpages */
 .footer { 
   background-color: rgb(95, 113, 167);

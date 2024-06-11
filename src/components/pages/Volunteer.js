@@ -2,6 +2,7 @@ import React from 'react'
 import { PageHeading, SectionHeading } from '../styled/StyledHeading'
 import { CardHeading } from '../styled/StyledHeading'
 import { TextMedium } from '../styled/TextStyles'
+import InfoCard from '../InfoCard'
 
 const Volunteer = () => {
   return (
@@ -84,6 +85,12 @@ const Volunteer = () => {
                 </div>
                 <TextMedium>We have several teams that help with operations and enable us to handle business properly.</TextMedium>
                 <TextMedium>Check out our teams below in more detail.</TextMedium>
+                <div className=" teamsGrid container-grid justify-evenly items-center bg-red-600 w-full">
+                    {/* <div className="max-w-sm min-w-64 w-full m-5 bg-blue-400 h-4/5"> Item 1</div>
+                    <div className="max-w-sm min-w-64 w-full m-5 bg-blue-500 h-4/5"> Item 2</div> */}
+                    <InfoCard title="Organizational Team" desc="Our organizational team helps establish new ideas to help us for further with our operations."></InfoCard>
+                    <InfoCard title="Professional Network" desc="Have skills or expertise you can share with us? Join our professional network!"></InfoCard>
+                </div>
             </div>
         </section>
 

@@ -13,6 +13,18 @@ export const CardHeading = styled.h1`
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 `;
 
+export const AboutUsHeading = styled.h2`
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+`;
+
+export const AboutUsSection = styled.section`
+  display: flex;
+  justify-content: start;
+  padding: 10px 0px;
+`
+
 export const SectionHeading = styled.h1`
   font-size: 3em;
 `;

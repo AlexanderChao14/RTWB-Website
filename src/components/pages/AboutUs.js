@@ -1,9 +1,14 @@
 import React from 'react'
 import {CardHeading, PageHeading, AboutUsHeading, AboutUsSection, StyledHeading} from '../styled/StyledHeading'
 import { TextMedium } from '../styled/TextStyles';
+import { motion } from 'framer-motion';
+import { useState } from "react";
 
 
 const AboutUs = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [isOpenEric, setIsOpenEric] = useState(false);
+
     return (
         <React.Fragment>
             <div className='flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
@@ -92,7 +97,13 @@ const AboutUs = () => {
                 </a>
             </AboutUsSection>
             <section>
-                <CardHeading>Our Team</CardHeading>
+                <div className='flex flex-col items-center'>
+                    <CardHeading>Our Team</CardHeading>
+                    <motion.img layout initial={{borderRadius:50}} data-isOpen={isOpenEric} onClick={() => setIsOpenEric(!isOpenEric)} className='team-member-card' src="images/eric-cheng.jpg">
+                    </motion.img>
+                    <motion.img layout initial={{borderRadius:50}} data-isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} className='team-member-card' src="images/get-involved-photo.jpg">
+                    </motion.img>
+                </div>
             </section>
             <section className='flex flex-col items-center'>
                 <CardHeading>Our Mission</CardHeading>

@@ -230,4 +230,20 @@ section {
   .landing-intro {
     min-height: 400px;
   }
+
+}
+
+/* .team-member-card{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  
+} */
+
+.team-member-card[data-isOpen="true"]{
+  width: 400px;
+  height: 200px;
 }

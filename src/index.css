@@ -25,6 +25,10 @@ section {
   /* background-color: #a3bcf9; */
 }
 
+a {
+  
+}
+
 .sectioncolor-light {
   background-color: #ffffff;
 }
@@ -130,7 +134,7 @@ section {
 .updatesContainer {
   height: fit-content;
   background-color: steelblue;
-  width: 75%;
+  width: 60%;
 }
 
 /* Updates Grid for the landing page */
@@ -139,17 +143,18 @@ section {
   /* background-color: rgb(157, 200, 94); */
   width: 85%;
   height: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
   gap: 20px;
   padding: 10px 0px;
   margin: 20px 0px;
 }
 
+/* Grid for the Our Teams section on the volunteer page */
 .teamsGrid {
   height: fit-content;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
   grid-template-rows: repeat(1fr);
   padding: 20px 0px;
 }
@@ -194,10 +199,17 @@ section {
 }
 
 /* Media queries for page responsiveness. */
+@media (max-width: 1500px) {
+  .updatesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
 @media (max-width: 1000px) {
   .updatesGrid, .updatesContainer {
     width: 100%;
   }
+
 
   /* Change the grid columns to a horizontal format */
   .grid-cols-even, .grid-cols-left, .grid-cols-right {

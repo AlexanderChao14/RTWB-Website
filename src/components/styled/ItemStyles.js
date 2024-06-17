@@ -7,6 +7,7 @@ export const MoreNewsCard = styled.div`
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     min-height: 360px;
+    height: 100%;
     width: 340px;
 `;
 

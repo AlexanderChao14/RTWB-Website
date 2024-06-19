@@ -198,6 +198,15 @@ a {
   font-size: 24px;
 }
 
+.text-medium-link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+}
+
+
+
+
 /* Media queries for page responsiveness. */
 @media (max-width: 1500px) {
   .updatesGrid {

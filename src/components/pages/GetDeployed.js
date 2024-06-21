@@ -7,19 +7,20 @@ import { SectionHeading } from '../styled/StyledHeading'
 const GetDeployed = () => {
   return (
     <>
-         <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
             <PageHeading className=''>
                 Volunteering and Deployment
             </PageHeading>
         </div>
 
+        {/* Introduction Section */}
         <section className="container-flexbox justify-center">
             <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-full">
                 <div className="flex-item-dir-cols grid-item-center w-full h-full">
                     <CardHeading>Deployment</CardHeading>
-                    <TextMedium>RTWB is a Canadian Charity. All of our positions in the organization are strictly volunteer run.</TextMedium>
-                    <TextMedium>Check out our available volunteer job postings here.</TextMedium>
-                    <TextMedium>If you are interested, follow the steps below to apply.</TextMedium>
+                    <TextMedium>RTWB operates fundamentally with the help of our dedicated <a href="">volunteers.</a></TextMedium>
+                    <TextMedium>Our Volunteers work tirelessly to make a positive impact on the respiratory therapist community, dedicating time to our cause. Without them, we would not be able to operate across the world as we are today.</TextMedium>
+                    <TextMedium>If you are interesting in volunteering, check out our opportunities to get deployed.</TextMedium>
                 </div>
 
                 <div className="flex-item-dir-cols grid-item-center w-full h-full">

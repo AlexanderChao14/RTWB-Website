@@ -2,6 +2,7 @@ import React from 'react'
 import { PageHeading, SectionHeading } from '../styled/StyledHeading'
 import { CardHeading } from '../styled/StyledHeading'
 import { TextMedium } from '../styled/TextStyles'
+import TeamsCard from '../TeamsCard'
 import InfoCard from '../InfoCard'
 
 const Volunteer = () => {
@@ -28,25 +29,37 @@ const Volunteer = () => {
             </div>
         </section>
 
+        <section className="container-flexbox justify-start bg-blue-100 py-20">
+            <div className="bg-blue-100 mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
+                <div className="self-center flex justify-center">
+                    <SectionHeading className="font-semibold">Our Teams</SectionHeading>
+                </div>
+                <div className="teamsFlex flex w-full rounded-3xl items-center">
+                    
+                    <TeamsCard title="Volunteer" desc="Get deployed and see our volunteer positions" path="/GetDeployed" key="GetDeployed"></TeamsCard>
+                    <TeamsCard title="Healthcare Education Partners" desc="Become a Healthcare Education Partner" path="/HealthEducationPartner" key="HealthEducationPartner"></TeamsCard>
+                </div>
+                <div className=" teamsFlex flex w-full rounded-3xl items-center">
+                    <TeamsCard title="Our Board" desc="Join our committee"></TeamsCard>
+                    <TeamsCard title="The Organizational Team" desc="Get involved with developing ideas"></TeamsCard>
+                    <TeamsCard title="The Professional Network Team" desc="Share your skills"></TeamsCard>
+                </div>
+            </div>
+        </section>
+
         <section className="container-flexbox justify-start sectioncolor-dark">
             <div className="bg-blue-100 mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full bg-red-200 rounded-3xl">
+                <div className="flex justify-start flex-col py-4 px-5 w-full bg-red-200 rounded-3xl items-center text-center">
                     <div className="self-center">
                         <SectionHeading className="font-semibold">Volunteering and Deployment</SectionHeading>
                     </div>
                     <TextMedium>RTWB operates fundamentally with the help of our dedicated <a href="">volunteers.</a></TextMedium>
                     <TextMedium>Our Volunteers work tirelessly to make a positive impact on the respiratory therapist community, dedicating time to our cause. Without them, we would not be able to operate across the world as we are today.</TextMedium>
-                    <TextMedium>All of our volunteer postings are below. If you are interested, please follow the steps below.</TextMedium>
-                    <TextMedium className="font-extrabold">Phase 1: Application</TextMedium>
+                    <TextMedium>If you are interesting in volunteering, check out our opportunities to get deployed.</TextMedium>
                     <div>
-                        <ul className="list-disc px-10">
-                            <li>Magna veniam non incididunt labore fugiat ipsum velit exercitation.</li>
-                            <li>Ea nostrud nulla ex et labore proident voluptate dolor dolore sunt in Lorem.</li>
-                            <li>Irure aliquip elit ex ad duis.</li>
-                            <li>Duis ex Lorem cillum occaecat esse magna laborum consectetur adipisicing.</li>
-                            <li>Veniam labore aliquip aute deserunt voluptate id pariatur in dolore minim exercitation culpa veniam.</li>
-                        </ul>
+                        Button Here.
                     </div>
+
                 </div>
             </div>
         </section>
@@ -57,8 +70,8 @@ const Volunteer = () => {
                     <div className="self-center">
                         <SectionHeading className="font-semibold">Healthcare Education Partners</SectionHeading>
                     </div>
-                    <TextMedium>RTWB operates fundamentally with the help of our dedicated volunteers and devoted staff.</TextMedium>
-                    <TextMedium>Our Volunteers work tirelessly to make a positive impact on the respiratory therapist community, dedicating time to our cause. Without them, we would not be able to operate across the world as we are today.</TextMedium>
+                    <TextMedium>RTWB/ISF works exclusively with Healthcare Education Partner (HEP) sites. This is to ensure that thre is a respiratory need that RTWB/ISF can address with a deployment.</TextMedium>
+                    <TextMedium>If you are interested in becoming a Healthcare Education Partner, please follow the steps below.</TextMedium>
                 </div>
             </div>
         </section>

@@ -208,7 +208,7 @@ section {
   /* Adjust the right side format to match the others */
   .grid-cols-right {
     display:flex;
-    flex-direction: column-reverse;
+    flex-diection: column-reverse;
   }
 
   /* Container grid should fill up the entire screen for small screens */
@@ -233,17 +233,37 @@ section {
 
 }
 
-/* .team-member-card{
+.team-member-card{
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  padding: 8px;
+  margin: 8px;
+  
+}
+
+.team-member-card[data-isOpen="true"]{
+  width: 400px;
+  height: 200px;
+}
+
+.team-member-pic{
   width: 100px;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  
-} */
+  border-radius: 50px;
+}
 
-.team-member-card[data-isOpen="true"]{
-  width: 400px;
-  height: 200px;
+.team-member-pic[data-isOpen="true"]{
+  position: relative;
+  justify-self: start;
+  align-items: start;
+  bottom: 20%;
+  left: -100px;
+  border-radius: 50px;
 }

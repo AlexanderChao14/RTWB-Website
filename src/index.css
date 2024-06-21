@@ -25,6 +25,10 @@ section {
   /* background-color: #a3bcf9; */
 }
 
+a {
+  
+}
+
 .sectioncolor-light {
   background-color: #ffffff;
 }
@@ -130,26 +134,40 @@ section {
 .updatesContainer {
   height: fit-content;
   background-color: steelblue;
-  width: 75%;
+  width: 60%;
 }
 
 /* Updates Grid for the landing page */
 .updatesGrid {
   display: grid;
   /* background-color: rgb(157, 200, 94); */
-  width: 85%;
+  width: 95%;
   height: 90%;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
   gap: 20px;
   padding: 10px 0px;
   margin: 20px 0px;
 }
 
+/* Teams Flexbox area for get Involved page */
+.teamsFlex {
+  padding: 10px 0px;
+}
+
+.teamsCard {
+  transition: all .2s ease-in-out
+}
+
+.teamsCard:hover {
+  transform: scale(1.05);
+}
+
+/* Grid for the Our Teams section on the volunteer page */
 .teamsGrid {
   height: fit-content;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
   grid-template-rows: repeat(1fr);
   padding: 20px 0px;
 }
@@ -193,11 +211,27 @@ section {
   font-size: 24px;
 }
 
+.text-medium-link {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+}
+
+
+
+
 /* Media queries for page responsiveness. */
+@media (max-width: 1500px) {
+  .updatesGrid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
 @media (max-width: 1000px) {
   .updatesGrid, .updatesContainer {
     width: 100%;
   }
+
 
   /* Change the grid columns to a horizontal format */
   .grid-cols-even, .grid-cols-left, .grid-cols-right {
@@ -229,6 +263,12 @@ section {
 
   .landing-intro {
     min-height: 400px;
+  }
+
+  /* Change to single column */
+  .teamsFlex {
+    flex-direction: column;
+    padding: 0px 0px;
   }
 
 }

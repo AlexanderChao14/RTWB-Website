@@ -141,13 +141,26 @@ a {
 .updatesGrid {
   display: grid;
   /* background-color: rgb(157, 200, 94); */
-  width: 85%;
+  width: 95%;
   height: 90%;
   grid-template-columns: repeat(2, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
   gap: 20px;
   padding: 10px 0px;
   margin: 20px 0px;
+}
+
+/* Teams Flexbox area for get Involved page */
+.teamsFlex {
+  padding: 10px 0px;
+}
+
+.teamsCard {
+  transition: all .2s ease-in-out
+}
+
+.teamsCard:hover {
+  transform: scale(1.05);
 }
 
 /* Grid for the Our Teams section on the volunteer page */
@@ -250,6 +263,12 @@ a {
 
   .landing-intro {
     min-height: 400px;
+  }
+
+  /* Change to single column */
+  .teamsFlex {
+    flex-direction: column;
+    padding: 0px 0px;
   }
 
 }

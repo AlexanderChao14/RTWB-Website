@@ -3,15 +3,12 @@ import { PageHeading } from '../styled/StyledHeading'
 import { CardHeading } from '../styled/StyledHeading'
 import { TextMedium, TextMediumBold } from '../styled/TextStyles'
 import { SectionHeading } from '../styled/StyledHeading'
+import PageTitle from '../PageTitle'
 
 const GetDeployed = () => {
   return (
     <>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
-            <PageHeading className="">
-                Volunteering and Deployment
-            </PageHeading>
-        </div>
+        <PageTitle title="Volunteering and Deployment"></PageTitle>
 
         {/* Introduction Section */}
         <section className="container-flexbox justify-center">

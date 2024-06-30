@@ -10,6 +10,8 @@ import GetInvolved from './components/pages/GetInvolved'
 import GetDeployed from './components/pages/GetDeployed'
 import HealthEducationPartner from './components/pages/HealthEducationPartner'
 import Board from './components/pages/Board'
+import ProfessionalTeams from './components/pages/ProfessionalTeams'
+import News from './components/pages/News'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
               <Route path="/GetDeployed" element={<GetDeployed/>}/>
               <Route path="/HealthEducationPartner" element={<HealthEducationPartner/>}/>
               <Route path="/Board" element={<Board/>}/>
+              <Route path="/Teams" element={<ProfessionalTeams/>}/>
+              <Route path="/News" element={<News/>}/>
               <Route index element={<Home/>}/>
             </Route>
           </Routes>

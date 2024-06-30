@@ -9,6 +9,7 @@ import AboutUs from './components/pages/AboutUs'
 import GetInvolved from './components/pages/GetInvolved'
 import GetDeployed from './components/pages/GetDeployed'
 import HealthEducationPartner from './components/pages/HealthEducationPartner'
+import Board from './components/pages/Board'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/GetInvolved" element={<GetInvolved/>}/>
               <Route path="/GetDeployed" element={<GetDeployed/>}/>
               <Route path="/HealthEducationPartner" element={<HealthEducationPartner/>}/>
+              <Route path="/Board" element={<Board/>}/>
               <Route index element={<Home/>}/>
             </Route>
           </Routes>

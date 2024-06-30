@@ -1,13 +1,13 @@
 import React from 'react'
 import { PageHeading } from '../styled/StyledHeading'
-import { TextMedium } from '../styled/TextStyles'
+import { TextMedium, TextMediumBold } from '../styled/TextStyles'
 import { CardHeading } from '../styled/StyledHeading'
 import { SectionHeading } from '../styled/StyledHeading'
 
 const HealthEducationPartner = () => {
   return (
     <React.Fragment>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
             <PageHeading className=''>
                 Healthcare Education Partners
             </PageHeading>
@@ -30,15 +30,15 @@ const HealthEducationPartner = () => {
 
         <section className="container-flexbox justify-start bg-slate-100">
             <div className="mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full">
-                    <div className="self-center text-center pb-10">
+                <div className="flex justify-start flex-col items-start py-4 w-full">
+                    <div className="self-center text-center my-10 p-2 bg-blue-200 w-full">
                         <SectionHeading className="font-semibold">Become a Healthcare Education Partner</SectionHeading>
                     </div>
 
-                    <TextMedium className="font-bold">If you are a representative of a healthcare centre looking for a respiratory therapist, please complete sections 1-4 of the HEP Needs Assessment.</TextMedium>                
-                    <TextMedium className="font-bold">If you are a respiratory therapist travelling abroad, you are a key player to complete the HEP Needs Assessment.</TextMedium>
+                    <TextMediumBold className="">If you are a representative of a healthcare centre looking for a respiratory therapist, please complete sections 1-4 of the HEP Needs Assessment.</TextMediumBold>                
+                    <TextMediumBold className="">If you are a respiratory therapist travelling abroad, you are a key player to complete the HEP Needs Assessment.</TextMediumBold>
 
-                    <TextMedium className="font-extrabold pt-5">Required Application Forms:</TextMedium>
+                    <TextMediumBold className="pt-5">Required Application Forms:</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li><a href="" className="text-medium-link text-blue-600">Needs Assessment Form (English)</a></li>
@@ -48,7 +48,7 @@ const HealthEducationPartner = () => {
                     </div>
                     
 
-                    <TextMedium className="font-extrabold pt-10">HEP Applicant Criteria</TextMedium>
+                    <TextMediumBold className="pt-10">HEP Applicant Criteria</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>Applicants must be a registered healthcare facility with the local government.</li>
@@ -59,7 +59,7 @@ const HealthEducationPartner = () => {
                         </ul>
                     </div>
 
-                    <TextMedium className="font-extrabold pt-10">HEP Intake Process (3 Easy Steps)</TextMedium>
+                    <TextMediumBold className="pt-10">HEP Intake Process (3 Easy Steps)</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>Complete sections 1-4 of the HEP Needs Assessment form and email it to the Director of International Relations at dan.elliot@rtwb.ca</li>

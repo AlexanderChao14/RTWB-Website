@@ -8,8 +8,8 @@ import InfoCard from '../InfoCard'
 const Volunteer = () => {
   return (
     <React.Fragment>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-            <PageHeading className=''>
+        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
+            <PageHeading className="">
                 Get Involved
             </PageHeading>
         </div>
@@ -40,7 +40,7 @@ const Volunteer = () => {
                     <TeamsCard title="Healthcare Education Partners" desc="Become a Healthcare Education Partner" path="/HealthEducationPartner" key="HealthEducationPartner"></TeamsCard>
                 </div>
                 <div className=" teamsFlex flex w-full rounded-3xl items-center">
-                    <TeamsCard title="Our Board" desc="Join our committee"></TeamsCard>
+                    <TeamsCard title="Our Board" desc="Join our committee" path="/Board" key="Board"></TeamsCard>
                     <TeamsCard title="The Organizational Team" desc="Get involved with developing ideas"></TeamsCard>
                     <TeamsCard title="The Professional Network Team" desc="Share your skills"></TeamsCard>
                 </div>

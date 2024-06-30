@@ -4,17 +4,20 @@ import { CardHeading} from '../styled/StyledHeading'
 import { TextMedium, TextMediumBold } from '../styled/TextStyles'
 import { SectionHeading } from '../styled/StyledHeading'
 import TableCell from '../TableCell'
+import PageTitle from '../PageTitle'
 
 const director = ["Hello", "Hello2", "Hello3"];
 
 const Board = () => {
   return (
     <React.Fragment> 
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
+        {/* <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
             <PageHeading className="">
                 Our Board
             </PageHeading>
-        </div>
+        </div> */}
+
+        <PageTitle title="Our Board"></PageTitle>
 
         <section className="container-flexbox justify-center">
             <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-full">

@@ -16,3 +16,10 @@ export const TextMediumBold = styled.p`
   margin: 10px 0px;
   font-weight: bold;
 `
+
+export const TextMediumLink = styled.a`
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+  color: #2563eb;
+`

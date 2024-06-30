@@ -3,15 +3,13 @@ import { PageHeading } from '../styled/StyledHeading'
 import { TextMedium, TextMediumBold } from '../styled/TextStyles'
 import { CardHeading } from '../styled/StyledHeading'
 import { SectionHeading } from '../styled/StyledHeading'
+import PageTitle from '../PageTitle'
 
 const HealthEducationPartner = () => {
   return (
     <React.Fragment>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
-            <PageHeading className=''>
-                Healthcare Education Partners
-            </PageHeading>
-        </div>
+
+        <PageTitle title="Healthcare Education Partners"></PageTitle>
 
         {/* Introduction Section */}
         <section className="container-flexbox justify-center">

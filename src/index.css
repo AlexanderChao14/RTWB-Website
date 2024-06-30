@@ -159,7 +159,11 @@ a {
   transition: all .2s ease-in-out
 }
 
-.teamsCard:hover {
+.infoCard {
+  transition: all .2s ease-in-out;
+}
+
+.teamsCard:hover, .infoCard:hover {
   transform: scale(1.05);
 }
 
@@ -167,7 +171,7 @@ a {
 .teamsGrid {
   height: fit-content;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
   padding: 20px 0px;
 }
@@ -178,6 +182,16 @@ a {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr;
   gap: 1px 5px;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-rows: repeat(1fr);
+  height: fit-content;
+  padding: 10px 10px;
+  gap: 50px 15px;
+  width: 100%;
 }
 
 /* The footer object for all webpages */
@@ -217,12 +231,6 @@ a {
 .listHeader {
   font-weight: 700;
   font-size: 24px;
-}
-
-.text-medium-link {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  font-weight: 700;
 }
 
 

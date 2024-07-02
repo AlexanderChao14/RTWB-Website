@@ -64,7 +64,7 @@ const Home = () => {
             {/* Make a dynamic grid here for more sections */}
             <section className="sectioncolor-dark">
                 <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                    <SectionHeading className="text-center">Updates and More</SectionHeading>
+                    {/* <SectionHeading className="text-center">Updates and More</SectionHeading> */}
                     <div className="updatesGrid">
 
                         <InfoCard title="Meet the team" desc="Learn more about our incredible team."></InfoCard>

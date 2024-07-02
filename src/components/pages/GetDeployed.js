@@ -1,17 +1,14 @@
 import React from 'react'
 import { PageHeading } from '../styled/StyledHeading'
 import { CardHeading } from '../styled/StyledHeading'
-import { TextMedium } from '../styled/TextStyles'
+import { TextMedium, TextMediumBold } from '../styled/TextStyles'
 import { SectionHeading } from '../styled/StyledHeading'
+import PageTitle from '../PageTitle'
 
 const GetDeployed = () => {
   return (
     <>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-            <PageHeading className=''>
-                Volunteering and Deployment
-            </PageHeading>
-        </div>
+        <PageTitle title="Volunteering and Deployment"></PageTitle>
 
         {/* Introduction Section */}
         <section className="container-flexbox justify-center">
@@ -32,14 +29,15 @@ const GetDeployed = () => {
         {/* Application process section, with all relevant information. */}
         <section className="container-flexbox justify-start bg-slate-100">
             <div className="mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full">
-                    <div className="self-center text-center pb-10">
-                        <SectionHeading className="font-semibold">Application Process</SectionHeading>
+                <div className="flex justify-start flex-col items-start py-4 w-full">
+
+                    <div className="self-center text-center pb-10 w-full">
+                        <SectionHeading className="font-semibold w-full bg-blue-200">Application Process</SectionHeading>
                     </div>
                     <TextMedium>The application process has 4 phases, all listed below.</TextMedium>
 
                     {/* Set of list items for Phase 1 */}
-                    <TextMedium className="font-extrabold">Phase 1: Application</TextMedium>
+                    <TextMediumBold>Phase 1: Application</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>Review the Deployment Package <a href="" className="text-medium-link text-blue-600">here.</a></li>
@@ -51,7 +49,7 @@ const GetDeployed = () => {
                     </div>
                     
                     {/* Next set of list items for Phase 2 */}
-                    <TextMedium className="font-extrabold pt-5">Phase 2: I've got an interview!</TextMedium>
+                    <TextMediumBold className="pt-5">Phase 2: I've got an interview!</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>In preparation for the interview, download <a href="" className="text-medium-link text-blue-600">Google Hangouts.</a> This is mandatory.</li>
@@ -61,7 +59,7 @@ const GetDeployed = () => {
                     </div>
 
                     {/* Next set of list items for Phase 3 */}
-                    <TextMedium className="font-extrabold pt-5">Phase 3: I'm getting deployed!</TextMedium>
+                    <TextMediumBold className="pt-5">Phase 3: I'm getting deployed!</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>It is your responsibility to establish travel logistics with the HEP. When you have finalized travel dates, notify the Deployment Coordinator. They will arrange for your medical coverage while abroad.</li>
@@ -71,7 +69,7 @@ const GetDeployed = () => {
                     </div>
 
                     {/* Next set of list items for Phase 4. */}
-                    <TextMedium className="font-extrabold pt-5">Phase 4: After Deployment</TextMedium>
+                    <TextMediumBold className="pt-5">Phase 4: After Deployment</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>Please complete the Post Deployment Record <a href="" className="text-medium-link">here </a> (feedback survey) to help us improve our services for future deployments.</li>

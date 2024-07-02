@@ -4,15 +4,13 @@ import { CardHeading } from '../styled/StyledHeading'
 import { TextMedium } from '../styled/TextStyles'
 import TeamsCard from '../TeamsCard'
 import InfoCard from '../InfoCard'
+import PageTitle from '../PageTitle'
 
 const Volunteer = () => {
   return (
     <React.Fragment>
-        <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-            <PageHeading className=''>
-                Get Involved
-            </PageHeading>
-        </div>
+
+        <PageTitle title="Get Involved"></PageTitle>
 
         <section className="container-flexbox justify-center">
             <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
@@ -29,6 +27,7 @@ const Volunteer = () => {
             </div>
         </section>
 
+        {/* TODO: Fix the container structure, I don't really like it but it works. */}
         <section className="container-flexbox justify-start bg-blue-100 py-20">
             <div className="bg-blue-100 mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                 <div className="self-center flex justify-center">
@@ -40,9 +39,9 @@ const Volunteer = () => {
                     <TeamsCard title="Healthcare Education Partners" desc="Become a Healthcare Education Partner" path="/HealthEducationPartner" key="HealthEducationPartner"></TeamsCard>
                 </div>
                 <div className=" teamsFlex flex w-full rounded-3xl items-center">
-                    <TeamsCard title="Our Board" desc="Join our committee"></TeamsCard>
-                    <TeamsCard title="The Organizational Team" desc="Get involved with developing ideas"></TeamsCard>
-                    <TeamsCard title="The Professional Network Team" desc="Share your skills"></TeamsCard>
+                    <TeamsCard title="Our Board" desc="Join our committee" path="/Board" key="Board"></TeamsCard>
+                    <TeamsCard title="The Organizational And Professional Network Team" desc="Develop ideas and share your skills." path="/Teams" key="Teams"></TeamsCard>
+                    <TeamsCard title="Our Sponsors" desc="Our heartfelt gratitude."></TeamsCard>
                 </div>
             </div>
         </section>

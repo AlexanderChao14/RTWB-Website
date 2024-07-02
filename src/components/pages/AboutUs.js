@@ -1,8 +1,9 @@
 import React from 'react'
-import {CardHeading, PageHeading, AboutUsHeading, AboutUsSection, StyledHeading} from '../styled/StyledHeading'
+import {CardHeading, PageHeading, AboutUsHeading, AboutUsSection, SectionHeading} from '../styled/StyledHeading'
 import { TextMedium } from '../styled/TextStyles';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from "react";
+import MemberInfoCard from "../MemberInfoCard"
 
 
 const AboutUs = () => {
@@ -91,20 +92,37 @@ const AboutUs = () => {
                     Eric Cheng
                     <br/>
                     Co-Founder & Culture Creator
+                    <br/>
+                    <br/>
+                    <a key={"More Stories"} className="max-w-44 place-self-center bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
+                        View the full story and more stories.
+                    </a>
                 </text>
-                <a key={"More Stories"} className="max-w-44 place-self-center bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
-                    View the full story and more stories.
-                </a>
             </AboutUsSection>
-            <section>
-                <div className='flex flex-col items-center'>
-                    <CardHeading>Our Team</CardHeading>
-                    <motion.img layout initial={{borderRadius:50}} data-isOpen={isOpenEric} onClick={() => setIsOpenEric(!isOpenEric)} className='team-member-card' src="images/eric-cheng.jpg">
-                    </motion.img>
-                    <motion.img layout initial={{borderRadius:50}} data-isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} className='team-member-card' src="images/get-involved-photo.jpg">
-                    </motion.img>
+
+            <section className='container-flexbox justify-start'>
+                <div className='mx-auto max-w-screen-2xl'>
+
+                    <SectionHeading className="font-semibold flex self-center justify-center">Our Team</SectionHeading>
+                    
+                    
+                    <div className='flex w-full rounded-3xl items-center justify-center max-w-screen-2xl bg-orange-600 flex-wrap'>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                    
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                        <MemberInfoCard name="Eric Cheng" title="Director, Culture Creator" desc="Cool guy" email="TestEmail@mail.com" location="City, Province, Country" pic="images/eric-cheng.jpg"/>
+                    </div>
+                    
                 </div>
             </section>
+
+            
             <section className='flex flex-col items-center'>
                 <CardHeading>Our Mission</CardHeading>
                 <TextMedium>Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>

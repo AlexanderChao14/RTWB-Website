@@ -5,7 +5,7 @@ const defaultStyle = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
-    height: "350px",
+    // height: "350px",
     width: "450px",
     borderRadius: "15px",
     backgroundColor: "#88a8db",
@@ -31,11 +31,11 @@ const MemberInfoCard = ({name, title, desc, location, email, pic}) => {
       {/* <div style={container}> */}
           <div style={defaultStyle} >
                 <img src={pic} style={pictureStyle} alt={name}></img>
-                <text className="font-bold">{name}</text>
+                <text className="font-bold text-xl">{name}</text>
                 <text className="font-bold">{title}</text>
-                <p>{desc}</p>
-                <p>{email}</p>
-                <p>{location}</p>
+                <p className="">{location}</p>
+                <a href={"mailto:"+{email}} className="underline underline-offset-1 text-blue-600 font-medium">{email}</a>
+                <p className="italic">{desc}</p>
             </div>
           {/* </div> */}
     </React.Fragment>

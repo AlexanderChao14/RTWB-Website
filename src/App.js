@@ -12,6 +12,7 @@ import HealthEducationPartner from './components/pages/HealthEducationPartner'
 import Board from './components/pages/Board'
 import ProfessionalTeams from './components/pages/ProfessionalTeams'
 import News from './components/pages/News'
+import TestPage from './components/pages/TestPage'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
               <Route path="/Board" element={<Board/>}/>
               <Route path="/Teams" element={<ProfessionalTeams/>}/>
               <Route path="/News" element={<News/>}/>
+              <Route path="/TestPage" element={<TestPage/>}/>
               <Route index element={<Home/>}/>
             </Route>
           </Routes>

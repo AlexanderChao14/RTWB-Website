@@ -13,7 +13,7 @@ const Volunteer = () => {
         <PageTitle title="Get Involved"></PageTitle>
 
         <section className="container-flexbox justify-center">
-            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
+            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
                 <div className="flex-item-dir-cols grid-item-center w-full h-full">
                     Picture here
                 </div>
@@ -27,9 +27,8 @@ const Volunteer = () => {
             </div>
         </section>
 
-        {/* TODO: Fix the container structure, I don't really like it but it works. */}
-        <section className="container-flexbox justify-start bg-blue-100 py-20">
-            <div className="bg-blue-100 mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
+        <section className="container-flexbox justify-startpy-20 bg-slate-200">
+            <div className="mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                 <div className="self-center flex justify-center">
                     <SectionHeading className="font-semibold">Our Teams</SectionHeading>
                 </div>
@@ -41,77 +40,7 @@ const Volunteer = () => {
                 <div className=" teamsFlex flex w-full rounded-3xl items-center">
                     <TeamsCard title="Our Board" desc="Join our committee" path="/Board" key="Board"></TeamsCard>
                     <TeamsCard title="The Organizational And Professional Network Team" desc="Develop ideas and share your skills." path="/Teams" key="Teams"></TeamsCard>
-                    <TeamsCard title="Our Sponsors" desc="Our heartfelt gratitude."></TeamsCard>
-                </div>
-            </div>
-        </section>
-
-        <section className="container-flexbox justify-start sectioncolor-dark">
-            <div className="bg-blue-100 mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col py-4 px-5 w-full bg-red-200 rounded-3xl items-center text-center">
-                    <div className="self-center">
-                        <SectionHeading className="font-semibold">Volunteering and Deployment</SectionHeading>
-                    </div>
-                    <TextMedium>RTWB operates fundamentally with the help of our dedicated <a href="">volunteers.</a></TextMedium>
-                    <TextMedium>Our Volunteers work tirelessly to make a positive impact on the respiratory therapist community, dedicating time to our cause. Without them, we would not be able to operate across the world as we are today.</TextMedium>
-                    <TextMedium>If you are interesting in volunteering, check out our opportunities to get deployed.</TextMedium>
-                    <div>
-                        Button Here.
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section className="container=flexbox justify-start sectioncolor-dark">
-            <div className="bg-blue-100 mx-auto my-2 max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full bg-green-300 rounded-3xl">
-                    <div className="self-center">
-                        <SectionHeading className="font-semibold">Healthcare Education Partners</SectionHeading>
-                    </div>
-                    <TextMedium>RTWB/ISF works exclusively with Healthcare Education Partner (HEP) sites. This is to ensure that thre is a respiratory need that RTWB/ISF can address with a deployment.</TextMedium>
-                    <TextMedium>If you are interested in becoming a Healthcare Education Partner, please follow the steps below.</TextMedium>
-                </div>
-            </div>
-        </section>
-
-        <section className="container-flexbox justify-start">
-            <div className="bg-blue-100 mx-auto my-2 max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full bg-orange-200 rounded-3xl">
-                    <div className="self-center">
-                        <SectionHeading className="font-semibold">Join our board</SectionHeading>
-                    </div>
-                    <TextMedium>We're at an exciting time of development (ie. nothing is set in stone). If you are interested in influencing how this RT pandemic takes place, consider joining our board!</TextMedium>
-                    <TextMedium>Our board positions include:</TextMedium>
-                    <div>
-                        <ul className="list-disc px-10">
-                            <li>Magna veniam non incididunt labore fugiat ipsum velit exercitation.</li>
-                            <li>Ea nostrud nulla ex et labore proident voluptate dolor dolore sunt in Lorem.</li>
-                            <li>Irure aliquip elit ex ad duis.</li>
-                            <li>Duis ex Lorem cillum occaecat esse magna laborum consectetur adipisicing.</li>
-                            <li>Veniam labore aliquip aute deserunt voluptate id pariatur in dolore minim exercitation culpa veniam.</li>
-                        </ul>
-                    </div>
-                    <TextMedium className="py-3">Please email our director Eric Cheng at eric@rtwb.ca in regards to joining our board.</TextMedium>
-                </div>
-            </div>
-        </section>
-
-        {/* Our Teams Section */}
-        <section className="container-flexbox justify-start">
-            <div className=" bg-blue-100 mx-auto my-2 max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
-                <div className="flex justify-start flex-col items-start py-4 px-5 w-full bg-purple-300 rounded-3xl">
-                    <div className="self-center">
-                        <SectionHeading className="font-semibold">Our Teams</SectionHeading>
-                    </div>
-                    <TextMedium>We have several teams that help with operations and enable us to handle business properly.</TextMedium>
-                    <TextMedium>Check out our teams below in more detail.</TextMedium>
-                    <div className=" teamsGrid container-grid justify-evenly items-center w-full rounded-3xl">
-                        {/* <div className="max-w-sm min-w-64 w-full m-5 bg-blue-400 h-4/5"> Item 1</div>
-                        <div className="max-w-sm min-w-64 w-full m-5 bg-blue-500 h-4/5"> Item 2</div> */}
-                        <InfoCard title="Organizational Team" desc="Our organizational team helps establish new ideas to help us further with our operations."></InfoCard>
-                        <InfoCard title="Professional Network" desc="Have skills or expertise you can share with us? Join our professional network!"></InfoCard>
-                    </div>
+                    <TeamsCard title="Our Sponsors" desc="Our heartfelt gratitude." path="/Sponsors" key="Sponsors"></TeamsCard>
                 </div>
             </div>
         </section>

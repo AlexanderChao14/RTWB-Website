@@ -133,7 +133,7 @@ a {
 /* The Container for the updates grid. */
 .updatesContainer {
   height: fit-content;
-  background-color: steelblue;
+  /* background-color: steelblue; */
   width: 60%;
 }
 
@@ -145,9 +145,6 @@ a {
   height: 90%;
   grid-template-columns: repeat(2, minmax(350px, 1fr));
   grid-template-rows: repeat(1fr);
-  gap: 20px;
-  padding: 10px 0px;
-  margin: 20px 0px;
 }
 
 /* Teams Flexbox area for get Involved page */
@@ -192,6 +189,22 @@ a {
   padding: 10px 10px;
   gap: 50px 15px;
   width: 100%;
+}
+
+/* .sponsorsFlex {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2em;
+} */
+
+.sponsorsFlex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-rows: repeat(1fr);
+  grid-auto-rows: 1fr;
 }
 
 /* The footer object for all webpages */
@@ -258,7 +271,7 @@ a {
   /* Adjust the right side format to match the others */
   .grid-cols-right {
     display:flex;
-    flex-diection: column-reverse;
+    flex-direction: column-reverse;
   }
 
   /* Container grid should fill up the entire screen for small screens */

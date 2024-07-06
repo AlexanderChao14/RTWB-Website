@@ -46,10 +46,10 @@ const Home = () => {
                 </div>
             </section>
             
-            {/* Volunteer Section */}
+            {/* Get Involved Section */}
             <section>
                 <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                    <div className="flex-item-dir-cols grid-item-center items-center w-full h-full">
+                    <div className="flex-item-dir-cols grid-item-center w-full h-full">
                         <img src="images/get-involved-photo.jpg" className="card-image"/>
                     </div>
 
@@ -62,7 +62,7 @@ const Home = () => {
             </section>
 
             {/* Make a dynamic grid here for more sections */}
-            <section className="sectioncolor-dark">
+            <section className="bg-slate-200">
                 <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                     {/* <SectionHeading className="text-center">Updates and More</SectionHeading> */}
                     <div className="updatesGrid">

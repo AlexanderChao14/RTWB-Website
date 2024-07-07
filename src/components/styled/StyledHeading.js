@@ -32,3 +32,9 @@ export const SectionHeading = styled.h1`
 export const PageHeading = styled.h1`
   font-size: 4em;
 `
+
+export const OurTeamSubHeading = styled.h2`
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+`;

@@ -15,11 +15,12 @@ const cardFormat = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "start",
+  justifySelf: "center",
   alignItems: "start",
-  width: "450px",
+  maxWidth: "450px",
+  width: "90%",
   maxHeight: "400px",
-  margin: "2em 1em",
-  backgroundColor: "lightblue",
+  // backgroundColor: "lightblue",
 }
 
 const imgContainer = {
@@ -29,7 +30,8 @@ const imgContainer = {
 }
 
 const imageStyle = {
-  objectFit: "fill"
+  objectFit: "contain",
+  backgroundColor: "transparent"
 }
 
 

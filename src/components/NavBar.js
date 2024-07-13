@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonMain from "./ButtonMain";
 
 
 const NavBar = () =>{
@@ -20,7 +21,7 @@ const NavBar = () =>{
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
-                                <a href="/AboutUs" key={"About Us"} className="bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium">
+                                {/* <a href="/AboutUs" key={"About Us"} className="bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium">
                                     About Us
                                 </a>
                                 <a href="/GetInvolved" key={"GetInvolved"} className="bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium">
@@ -28,7 +29,11 @@ const NavBar = () =>{
                                 </a>
                                 <a href="/News" key={"News"} className="bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium">
                                     News
-                                </a>
+                                </a> */}
+                                <ButtonMain path="/AboutUs" key="About Us" text="About Us"></ButtonMain>
+                                <ButtonMain path="/GetInvolved" key="GetInvolved" text="Get Involved"></ButtonMain>
+                                <ButtonMain path="/News" key="News" text="News"></ButtonMain>
+                                <ButtonMain path="/Sponsors" key="Sponsors" text="Sponsors"></ButtonMain>
                             </div>
                         </div>
                     </div>

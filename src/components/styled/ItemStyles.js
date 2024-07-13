@@ -12,6 +12,14 @@ export const MoreNewsCard = styled.div`
     width: 340px;
 `;
 
+export const infoCardStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 350px;
+    border-radius: 15px;
+    padding: 35px 35px;
+`
 
 
 

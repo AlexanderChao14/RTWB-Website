@@ -34,21 +34,21 @@ const ProfessionalTeams = () => {
                     </div>
                     <TextMedium>As a charity, established and run on 100% volunteer efforts, your professional skills, knowledge and expertise or organizational support is the foundation to RTWB activities.</TextMedium>
                     
-                    <div className="mt-8">
-                        <TextMediumBold>Option 1: Professionals</TextMediumBold>
+                    <div className="mt-8 w-full">
+                        <TextMediumBold className="bg-blue-300">Option 1: Professionals</TextMediumBold>
                         <TextMedium>By joining the Professional Network, you receive free lifetime general membership and quarterly updates on RTWB activities. We encourage you to check the website frequently for different ways that you can get further involved. </TextMedium>
                         <TextMedium>Please watch the <TextMediumLink href="">RTWB Overview</TextMediumLink> and complete the Application for professionals.</TextMedium>
                     </div>
 
-                    <div className="mt-8">
-                        <TextMediumBold>Option 2: Organizational Representatives</TextMediumBold>
+                    <div className="mt-8 w-full">
+                        <TextMediumBold className="bg-blue-300">Option 2: Organizational Representatives</TextMediumBold>
                         <TextMedium>By joining the Professional Network, organizations receive recognition on our website and a certificate of support. Membership must be renewed annually with a donation of any sort.</TextMedium>
                         <TextMedium>Please watch the <TextMediumLink href="">RTWB Overview</TextMediumLink> and complete the applicable form.</TextMedium>
                         <TextMedium>Application for first time organizations <TextMediumLink href="">here.</TextMediumLink></TextMedium>
                         <TextMedium>Application for organizations looking to renew their application <TextMediumLink href="">here.</TextMediumLink></TextMedium>
                     </div>
 
-                    <div className="mt-8">
+                    <div className="mt-8 w-full">
                         <TextMedium>I look forward to welcoming you to the Professional Network soon! Feel free to email me with any comments, suggestions or feedback.</TextMedium>
                         <TextMedium>Mike Iwanow</TextMedium>
                         <TextMedium>mike.iwanow@rtwb.ca</TextMedium>

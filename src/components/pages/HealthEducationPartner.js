@@ -36,7 +36,10 @@ const HealthEducationPartner = () => {
                     <TextMediumBold className="">If you are a representative of a healthcare centre looking for a respiratory therapist, please complete sections 1-4 of the HEP Needs Assessment.</TextMediumBold>                
                     <TextMediumBold className="">If you are a respiratory therapist travelling abroad, you are a key player to complete the HEP Needs Assessment.</TextMediumBold>
 
-                    <TextMediumBold className="pt-5">Required Application Forms:</TextMediumBold>
+                    <div className="mt-5 w-full">
+                        <TextMediumBold className="mt-5 bg-blue-300 w-full">Required Application Forms:</TextMediumBold>
+                    </div>
+                    
                     <div>
                         <ul className="list-disc px-10">
                             <li><a href="" className="text-medium-link text-blue-600">Needs Assessment Form (English)</a></li>
@@ -45,8 +48,11 @@ const HealthEducationPartner = () => {
                         </ul>
                     </div>
                     
+                    
+                    <div className="mt-8 w-full">
+                        <TextMediumBold className="bg-blue-300">HEP Applicant Criteria</TextMediumBold>
+                    </div>
 
-                    <TextMediumBold className="pt-10">HEP Applicant Criteria</TextMediumBold>
                     <div>
                         <ul className="list-disc px-10">
                             <li>Applicants must be a registered healthcare facility with the local government.</li>
@@ -57,7 +63,10 @@ const HealthEducationPartner = () => {
                         </ul>
                     </div>
 
-                    <TextMediumBold className="pt-10">HEP Intake Process (3 Easy Steps)</TextMediumBold>
+                    <div className="mt-8 w-full">
+                        <TextMediumBold className="bg-blue-300">HEP Intake Process (3 Easy Steps)</TextMediumBold>
+                    </div>
+                    
                     <div>
                         <ul className="list-disc px-10">
                             <li>Complete sections 1-4 of the HEP Needs Assessment form and email it to the Director of International Relations at dan.elliot@rtwb.ca</li>

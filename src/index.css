@@ -21,7 +21,8 @@ section {
   display: flex;
   justify-content: center;
   /* margin-bottom: 20px; */
-  padding: 50px 0px;
+  padding-top: 50px;
+  padding-bottom: 70px;
   /* background-color: #a3bcf9; */
 }
 
@@ -30,7 +31,11 @@ a {
 }
 
 .sectioncolor-light {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
+}
+
+.sectioncolor-light-tint {
+  background-color: #E9E9ED;
 }
 
 .sectioncolor-dark {
@@ -42,7 +47,7 @@ a {
   display: grid;
   /* background-color: rgb(157, 200, 94); */
   min-height: 400px;
-  gap: 30px
+  gap: 10px
 }
 
 /* General container for flexbox */
@@ -78,10 +83,50 @@ a {
 }
 
 .card-image {
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
+  height: 90%;
+  object-fit:cover;
+  width: 80%;
 }
+
+/* top-left | top-right | bottom-right | bottom-left | */
+.border-left {
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+}
+
+.border-right {
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px
+}
+
+.border-br {
+  border-bottom-right-radius: 70px;
+}
+
+.border-bl {
+  border-bottom-left-radius: 70px;
+}
+
+.shadow-br {
+  -webkit-box-shadow: 23px 23px 11px 3px rgba(0,0,0,0.85); 
+  box-shadow: 23px 23px 11px 3px rgba(0,0,0,0.85);
+}
+
+.shadow-bl {
+  -webkit-box-shadow: -23px 23px 11px 3px rgba(0,0,0,0.85); 
+  box-shadow: -23px 23px 11px 3px rgba(0,0,0,0.85);
+}
+
+.shadow-full-br {
+  -webkit-box-shadow: 10px 10px 0px 0px #2D2D2D; 
+  box-shadow: 10px 10px 0px 0px #2D2D2D;
+}
+
+.shadow-full-bl {
+  -webkit-box-shadow: -10px 10px 0px 0px #2D2D2D; 
+  box-shadow: -10px 10px 0px 0px #2D2D2D;
+}
+
 
 /* Here I put the different flexbox templates */
 
@@ -110,7 +155,7 @@ a {
   background-color: #7796CB;
   margin: 20px 0px;
   padding: 20px;
-  max-height: 500px;
+  max-height: 450px;
 }
 
 /* Put grid items in the center of the cell */
@@ -134,7 +179,7 @@ a {
 .updatesContainer {
   height: fit-content;
   /* background-color: steelblue; */
-  width: 60%;
+  width: 80%;
 }
 
 /* Updates Grid for the landing page */
@@ -143,7 +188,7 @@ a {
   /* background-color: rgb(157, 200, 94); */
   width: 95%;
   height: 90%;
-  grid-template-columns: repeat(2, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, minmax(380px, 1fr));
   grid-template-rows: repeat(1fr);
 }
 
@@ -153,7 +198,13 @@ a {
 }
 
 .teamsCard {
-  transition: all .2s ease-in-out
+  transition: all .2s ease-in-out;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 350px;
+  border-radius: 15px;
+  padding: 35px 35px; */
 }
 
 .infoCard {
@@ -162,6 +213,8 @@ a {
 
 .teamsCard:hover, .infoCard:hover {
   transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -1px 5px 13px 10px rgba(0,0,0,0.51); 
+  box-shadow: 0px 10px 13px -7px #000000, -1px 5px 13px 10px rgba(0,0,0,0.51);
 }
 
 /* Grid for the Our Teams section on the volunteer page */
@@ -191,20 +244,13 @@ a {
   width: 100%;
 }
 
-/* .sponsorsFlex {
-  display: flex;
-  height: fit-content;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2em;
-} */
-
 .sponsorsFlex {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-template-rows: repeat(1fr);
   grid-auto-rows: 1fr;
+  /* background-color: red; */
+  gap: 3em 3em;
 }
 
 /* The footer object for all webpages */
@@ -250,7 +296,7 @@ a {
 
 
 /* Media queries for page responsiveness. */
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
   .updatesGrid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
@@ -273,6 +319,15 @@ a {
     display:flex;
     flex-direction: column-reverse;
   }
+
+  .border-left {
+    border-bottom-left-radius: 0px;
+  }
+
+  .border-right {
+    border-bottom-right-radius: 0px;
+  }
+  
 
   /* Container grid should fill up the entire screen for small screens */
   .container-grid {

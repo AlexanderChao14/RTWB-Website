@@ -63,7 +63,7 @@ const Home = () => {
 
                         <InfoCard img="images/teams-logo.png" title="Meet the team" desc="Learn more about our incredible team." path="/AboutUs" key="About Us"></InfoCard>
 
-                        <InfoCard img="images/world-logo.png" title="Where we Work" desc="See where our charity is deployed around the world."></InfoCard>
+                        <InfoCard img="images/world-logo.png" title="Where we Work" desc="See where our charity is deployed around the world." path="/WhereWeWork" key="WhereWeWork"></InfoCard>
 
                         <InfoCard img="images/megaphone-logo.png" title="Updates and News" desc="See our latest milestones and news." path="/News" key="News"></InfoCard>
                         

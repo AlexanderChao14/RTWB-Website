@@ -6,16 +6,12 @@ const NavBar = () =>{
     return(
         <div style={{backgroundColor:"rgb(95, 113, 167)"}}>
             <div className="mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-16 items-center justify-between">
-                    <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
-
-
-                        Toggle Drop down navbar
-                    </div>
-                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                        <div className="flex flex-shrink-0 items-center">
+                <div className="relative flex h-18 items-center justify-between">
+                    
+                    <div className="flex flex-1 items-center sm:items-stretch ">
+                        <div className="flex items-center">
                             {/* TODO either make a new logo or find other solution */}
-                            <a href="/">
+                            <a href="/" className="navLogo">
                                 <img src="images/RTWB_Logo.jpg" alt="RTWB Logo" className="rounded-md h-10 w-auto"/>
                             </a>
                         </div>

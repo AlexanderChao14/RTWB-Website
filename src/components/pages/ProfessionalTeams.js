@@ -12,12 +12,12 @@ const ProfessionalTeams = () => {
         <PageTitle title="Professional Teams"></PageTitle>
 
         <section className="container-flexbox justify-center">
-            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
-                    Picture here
+            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+                <div className="flex-item-dir-cols grid-item-center w-full h-full border-left shadow-full-br items-center">
+                    <img src="images/org-map.jpg" className="card-image border-left"/>
                 </div>
 
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
+                <div className="flex-item-dir-cols grid-item-center w-full h-full border-br shadow-full-br">
                     <CardHeading>Professional Network and Organizational Team</CardHeading>
                     <TextMedium>RTWB's operations are run effectively by the help of our Organization Team and experts in the field.</TextMedium>
                     <TextMedium>If you are interested in showing your skills or lending your help with organizing our operations, take a look at our teams below.</TextMedium>

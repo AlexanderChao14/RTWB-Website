@@ -275,28 +275,36 @@ a {
 
 /* The footer object for all webpages */
 .footer { 
-  background-color: rgb(95, 113, 167);
-  border-top: 8px solid rgb(151, 180, 188);
   min-height: 300px;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: flex-start;
   gap: 5px;
   padding: 10px;
 }
 
+.footer-back {
+  border-top: 8px solid rgb(151, 180, 188);
+  background-color: rgb(95, 113, 167);
+}
+
 /* A column or an item in the footer. Contains content within it */
 .footerCard {
   /* background-color: rgb(215, 154, 40); */
   /* border: 1px solid white; */
-  padding: 20px;
+  padding: 10px;
   justify-self: center;
+  width: 90%;
+  /* background-color: red; */
 }
 
 /* Styling for the lists in the footer */
 .footerList > li {
   margin: 12px auto;
+  font-size: 16px;
+  display: block;
+  line-height: 25px;
 }
 
 /* Hover functions  */
@@ -308,7 +316,7 @@ a {
 
 /* Styling for the list header */
 .listHeader {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
 }
 
@@ -373,6 +381,23 @@ a {
   .teamsFlex {
     flex-direction: column;
     padding: 0px 0px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-bottom: 5em;
+    gap: 15px 0px;
+  }
+
+  .footerCard {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    /* overflow: hidden; */
   }
 
 }

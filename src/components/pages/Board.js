@@ -9,26 +9,21 @@ import PageTitle from '../PageTitle'
 const director = ["Hello", "Hello2", "Hello3"];
 
 const Board = () => {
-  return (
-    <React.Fragment> 
-        {/* <div className="flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100">
-            <PageHeading className="">
-                Our Board
-            </PageHeading>
-        </div> */}
+    return (
+        <React.Fragment> 
 
         <PageTitle title="Our Board"></PageTitle>
 
         <section className="container-flexbox justify-center">
-            <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-full">
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
+            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+                <div className="flex-item-dir-cols grid-item-center w-full h-full border-left shadow-full-br items-center">
+                    <img src="images/board.jpg" className="card-image border-left"/>
+                </div>
+
+                <div className="flex-item-dir-cols grid-item-center w-full h-full border-br shadow-full-br">
                     <CardHeading>Board Committee</CardHeading>
                     <TextMedium>Our Board Committee helps handle and facilitate a lot of our development planning and future operations. They are a driving factor for our charity.</TextMedium>
                     <TextMedium>We're at an exciting time of development (i.e. othing is set in stone). If you are interested in influencing how this RT pandemic takes place, consider joining our board!</TextMedium>
-                </div>
-
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
-                    Picture here
                 </div>
             </div>
         </section>

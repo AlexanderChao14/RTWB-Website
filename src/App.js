@@ -14,6 +14,7 @@ import ProfessionalTeams from './components/pages/ProfessionalTeams'
 import News from './components/pages/News'
 import TestPage from './components/pages/TestPage'
 import Sponsors from './components/pages/Sponsors'
+import WhereWeWork from './components/pages/WhereWeWork'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/News" element={<News/>}/>
               <Route path="/Sponsors" element={<Sponsors/>}/>
               <Route path="/TestPage" element={<TestPage/>}/>
+              <Route path="/WhereWeWork" element={<WhereWeWork/>}/>
               <Route index element={<Home/>}/>
             </Route>
           </Routes>

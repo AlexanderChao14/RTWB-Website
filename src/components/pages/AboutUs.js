@@ -4,6 +4,9 @@ import { TextMedium, TextMediumPre } from '../styled/TextStyles';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from "react";
 import MemberInfoCard from "../MemberInfoCard"
+import ButtonMain from '../ButtonMain';
+import PageTitle from '../PageTitle';
+import ValuesCard from '../ValuesCard';
 
 
 const AboutUs = () => {
@@ -12,11 +15,9 @@ const AboutUs = () => {
 
     return (
         <React.Fragment>
-            <div className='flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
-                <PageHeading>
-                    About RTWB
-                </PageHeading>
-            </div>
+            <PageTitle title="About RTWB">
+                About RTWB
+             </PageTitle>
             <AboutUsSection className='mx-auto m-10 max-w-screen-2xl flex-col'>
                 <AboutUsHeading>Our Story</AboutUsHeading>
                 <text>
@@ -94,15 +95,15 @@ const AboutUs = () => {
                     Co-Founder & Culture Creator
                     <br/>
                     <br/>
-                    <a key={"More Stories"} className="max-w-44 place-self-center bg-gray-900 text-gray-300 rounded-md px-3 py-2 text-sm font-medium hoverButton" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
-                        View the full story and more stories.
-                    </a>
+                    <ButtonMain key={"More Stories"} text="View the full story and more stories." className="max-w-44 place-self-center bg-gray-900 text-gray-300 rounded-md px-3 py-2 text-sm font-medium" path="https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
+                        
+                    </ButtonMain>
                 </text>
             </AboutUsSection>
 
             <section className='container-flexbox justify-start'>
                 <div className='mx-auto max-w-screen-2xl'>
-                    <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
+                    <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 rounded-s-3xl rounded-br-3xl shadow-br'>
                         <SectionHeading className="font-semibold flex self-center justify-center">Our Team</SectionHeading>
                     </div>
                     
@@ -155,11 +156,11 @@ const AboutUs = () => {
             <section>
                 <div className="mx-auto max-w-screen-2xl items-center flex flex-col text-center">
                     <div className='flex w-full items-center justify-center content-center '>
-                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 '>
+                        <div className=' mx-4 max-w-screen-2xl px-2 sm:px-6 lg:px-8 rounded-s-3xl rounded-br-3xl shadow-br bg-themeLightblue'>
                             <CardHeading>Our Mission</CardHeading>
                             <TextMedium>Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>
                         </div>
-                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8'>
+                        <div className=' mx-4 max-w-screen-2xl px-2 sm:px-6 lg:px-8 rounded-s-3xl rounded-br-3xl shadow-br bg-themeLightblue'>
                             <CardHeading>Vision</CardHeading>
                             <TextMedium>Create a culture of 'giving back' synonymous with Respiratory Therapists.</TextMedium>
                         </div>
@@ -167,7 +168,7 @@ const AboutUs = () => {
                 </div>
             </section>
             <section>
-                <div className='mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
+                <div className='mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 rounded-s-3xl rounded-br-3xl shadow-br'>
                     <CardHeading className='text-center'>Culture</CardHeading>
                     <TextMedium>RTWB/ISF is rooted in the skills, knowledge and expertise respiratory therapists have to offer the world. Together respiratory therapists from around the globe stand proudly as allied health professionals with a culture of giving back to the global community. 
                                 <br/><br/>
@@ -181,27 +182,14 @@ const AboutUs = () => {
                     <CardHeading>Our Values</CardHeading>
                     <div className='flex w-full items-center justify-center'>
 
-                        <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-2/6 h-5/6 content-center'>
-                            <text className='text-3xl'>Compassion</text>
-                            <TextMedium>
-                                We emphasize CARE within healtcare.<br/><br/>
-                                The respiratory therapists culture is one of giving back without any compensation - realising that there is no monetary equivalent for the life-saving services we are privileged to provide from the heart.
-                            </TextMedium>
-                        </div>
-                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-2/6 h-5/6 content-center'>
+                        <ValuesCard header="Compassion" text=" We emphasize CARE within healtcare.
+                                The respiratory therapists culture is one of giving back without any compensation - realising that there is no monetary equivalent for the life-saving services we are privileged to provide from the heart."/>
 
-                            <text className='text-3xl'>Integrity</text>
-                            <TextMedium>
-                                We exercise skills, knowledge and judgement in critical situations to provide the best CARE for patients.<br/>
-                                As we emphasis on sustainable developments through education, our representatives believe in teaching the proverbial art of fishing for locals instead of catching fish for them. 
-                            </TextMedium>
-                        </div>
-                        <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-2/6 h-5/6 content-center'>
-                            <text className='text-3xl'>Innovation</text>
-                            <TextMedium>
-                                Many of the deployment sites at RTWB/ISF will be severely resource limited and require creative juices, RTWB/ISF builds bridges with non-healthcare related partnerships to gain new perspectives and innovate custom solutions for local healthcare needs.
-                            </TextMedium>
-                        </div>
+                        <ValuesCard bgMode="dark" header="Integrity" text=" We exercise skills, knowledge and judgement in critical situations to provide the best CARE for patients.<br/>
+                                As we emphasis on sustainable developments through education, our representatives believe in teaching the proverbial art of fishing for locals instead of catching fish for them. "></ValuesCard>
+                        
+                        <ValuesCard className="bg-blue-100" header="Innovation" text=" Many of the deployment sites at RTWB/ISF will be severely resource limited and require creative juices, RTWB/ISF builds bridges with non-healthcare related partnerships to gain new perspectives and innovate custom solutions for local healthcare needs."/>
+                        
                     </div>
                 </div>
             </section>

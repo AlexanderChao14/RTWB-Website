@@ -9,7 +9,7 @@ const defaultStyle = {
     borderRadius: "15px",
     backgroundColor: "#88a8db",
     padding: "35px 35px",
-    margin: "10px 20px",
+    margin: "20px 20px",
     borderStartStartRadius: "1.5rem",
     borderEndStartRadius: "1.5rem",
     borderBottomRightRadius: "1.5rem",
@@ -22,7 +22,7 @@ const pictureStyle ={
 }
 
 
-const VolunteerInfoCard = ({name, title, pic, location, startDate, message, message2,message3}) => {
+const VolunteerInfoCard = ({name, title, pic, location, startDate, message, message2}) => {
   return (
     <React.Fragment>
           <div style={defaultStyle} className="shadow-br">
@@ -35,7 +35,6 @@ const VolunteerInfoCard = ({name, title, pic, location, startDate, message, mess
                 <p className="italic">{message}</p>
                 <br/>
                 <p className="italic">{message2}</p>
-                <p className="italic">{message3}</p>
             </div>
     </React.Fragment>
   )

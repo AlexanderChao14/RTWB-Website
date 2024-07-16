@@ -207,15 +207,6 @@ a {
   box-shadow:0px 10px 13px -7px 	#505050, 3px 3px 3px 3px rgba(0,0,0,0.51)
 }
 
-.hoverButton{
-  transition: all .2s ease-in-out;
-}
-
-.hoverButton:hover{
-  transform: scale(1.05);
-  -webkit-box-shadow: 0px 10px 13px -7px #505050, 3px 3px 3px 3px rgba(0,0,0,0.51); 
-  box-shadow:0px 10px 13px -7px 	#505050, 3px 3px 3px 3px rgba(0,0,0,0.51)
-}
 
 .teamsCard {
   transition: all .2s ease-in-out;

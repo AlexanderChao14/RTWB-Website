@@ -2,16 +2,13 @@ import React from 'react'
 import { PageHeading } from '../styled/StyledHeading';
 import VolunteerInfoCard from '../VolunteerInfoCard';
 import { OurTeamSubHeading } from '../styled/StyledHeading';
+import PageTitle from '../PageTitle';
 
 const Volunteers = () =>{
 
     return(
         <React.Fragment>
-            <div className='flex justify-center mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 intro-card rounded-s-3xl rounded-br-3xl shadow-br'>
-                <PageHeading>
-                    Our Volunteers
-                </PageHeading>
-            </div>
+            <PageTitle title="Our Volunteers"/>
             <section className='container-flexbox justify-start'>
                 <div className='flex w-full rounded-3xl items-start justify-center mx-auto max-w-screen-2xl flex-wrap'>
                     <VolunteerInfoCard name="Archna Mathur" title="Equipment Donations Coordinator" pic="images/archna-mathur.jpg" location="Nanaimo, British Columbia, Canada" startDate="January 2016" 

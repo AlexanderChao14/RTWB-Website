@@ -12,16 +12,16 @@ const HealthEducationPartner = () => {
         <PageTitle title="Healthcare Education Partners"></PageTitle>
 
         {/* Introduction Section */}
-        <section className="container-flexbox justify-center">
-            <div className="container-grid grid-cols-right mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-full">
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
+        <section className="">
+            <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+                <div className="flex-item-dir-cols grid-item-center h-full border-left shadow-br">
                     <CardHeading>HEP - Healthcare Education Partners</CardHeading>
                     <TextMedium>RTWB/ISF works exclusively with Healthcare Education Partner (HEP) sites. This is to ensure that thre is a respiratory need that RTWB/ISF can address with a deployment.</TextMedium>
                     <TextMedium>If you are interested in becoming a Healthcare Education Partner, please follow the steps below.</TextMedium>
                 </div>
 
-                <div className="flex-item-dir-cols grid-item-center w-full h-full">
-                    Picture here
+                <div className="flex-item-dir-cols grid-item-center items-center w-full h-full border-br shadow-br">
+                    <img src="images/example-2.jpg" className="card-image border-br"/>
                 </div>
             </div>
         </section>

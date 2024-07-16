@@ -2,27 +2,36 @@ import React from "react";
 
 const Footer  = () =>{
     return(
-        <div className="footer">
-            <div className="footerCard">Excepteur sint labore sit anim eu cupidatat. Non officia ex magna eu veniam laboris eu velit. Cillum consectetur ipsum Lorem nisi fugiat in incididunt et. Dolore ut occaecat minim aute culpa consequat pariatur id magna quis labore deserunt. Qui minim aliquip dolor et aute eu Lorem ea voluptate elit cillum aliquip est.</div>
-            <div className="footerCard">
-                <p className="listHeader">Get Involved</p>
-                <ul className = "footerList">
-                    <li><a href="">Join us</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Donate</a></li>
-                    <li><a href="">Sponsors</a></li>
-                </ul>
+        <div className="footer-back">
+            <div className="footer mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
+                <div className="footerCard flex w-full h-36 my-5">
+                    <img src="images/rtwb-banner.png" className="object-contain shadow-bl max-h-44"/>
+                </div>
+                <div className="footerCard">
+                    <p className="listHeader">Get Involved</p>
+                    <ul className = "footerList">
+                        <li><a href="/GetInvolved" key="GetInvolved">Join us</a></li>
+                        <li><a href="/GetDeployed" key="GetDeployed">Deployment</a></li>
+                        <li><a href="/Sponsors" key="Sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <div className="footerCard">
+                    <p className="listHeader">Organization</p>
+                    <ul className = "footerList">
+                        <li><a href="/AboutUs" key="About Us">Our Mission</a></li>
+                        <li><a href="/Volunteers" key="Volunteers">Volunteer Team</a></li>
+                        <li><a href="/HealthEducationPartner" key="HealthEducationPartner">Healthcare Partners</a></li>
+                        <li><a href="/WhereWeWork" key="WhereWeWork">Where we work</a></li>
+                    </ul>
+                </div>
+                <div className="footerCard">
+                    <p className = "listHeader">Get In Touch</p>
+                    <ul className = "footerList">
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="AboutUs" key="About Us">Email</a></li>
+                    </ul>
+                </div>
             </div>
-            <div className="footerCard">
-                <p className = "listHeader">Get In Touch</p>
-                <ul className = "footerList">
-                    <li><a href="">Twitter/X</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Email</a></li>
-                </ul>
-            </div>
-                
-            
         </div>
     )
 }

@@ -69,9 +69,9 @@ const Home = () => {
                         
                         <InfoCard img="images/handshake-logo.png" title="Sponsors" desc="Our gratitude for these amazing people." path="/Sponsors" key="Sponsors"></InfoCard>
                         
-                        <InfoCard img="images/volunteer-logo.png" title="Volunteering" desc="See our volunteering community." path="" key=""></InfoCard>
+                        <InfoCard img="images/volunteer-logo.png" title="Volunteering" desc="See our volunteering community." path="/GetDeployed" key=""></InfoCard>
 
-                        <InfoCard img="images/heart-logo-png.png" title="Healthcare Partners" desc="People we work with." path="" key=""></InfoCard>
+                        <InfoCard img="images/heart-logo-png.png" title="Healthcare Partners" desc="People we work with." path="HealthEducationPartner" key=""></InfoCard>
                     </div>
                 </FlexboxColumnCenter>
             </section>

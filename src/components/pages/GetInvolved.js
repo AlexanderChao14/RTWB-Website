@@ -13,8 +13,8 @@ const Volunteer = () => {
 
         <section className="container-flexbox justify-center">
             <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                <div className="flex-item-dir-cols grid-item-center w-full h-full border-left shadow-full-br">
-                    Picture here
+                <div className="flex-item-dir-cols grid-item-center w-full h-full border-left shadow-full-br items-center">
+                    <img src="images/get-involved-intro.png" className="card-image border-left"/>
                 </div>
 
                 <div className="flex-item-dir-cols grid-item-center w-full h-full border-br shadow-full-br">
@@ -38,7 +38,7 @@ const Volunteer = () => {
                 </div>
                 <div className=" teamsFlex flex w-full rounded-3xl items-center">
                     <TeamsCard title="Our Board" desc="Join our committee" path="/Board" key="Board" img="images/board.jpg"></TeamsCard>
-                    <TeamsCard title="The Organizational And Professional Network Team" desc="Develop ideas and share your skills." path="/Teams" key="Teams" img="images/example-2.jpg"></TeamsCard>
+                    <TeamsCard title="The Organizational And Professional Network Team" desc="Develop ideas and share your skills." path="/Teams" key="Teams" img="images/org-map.jpg"></TeamsCard>
                     <TeamsCard title="Our Sponsors" desc="Our heartfelt gratitude." path="/Sponsors" key="Sponsors" img="images/sponsors-card.png"></TeamsCard>
                 </div>
             </div>

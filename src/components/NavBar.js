@@ -27,9 +27,9 @@ const NavBar = () =>{
                                     News
                                 </a> */}
                                 <ButtonMain path="/AboutUs" key="About Us" text="About Us"></ButtonMain>
+                                <ButtonMain path="/Volunteers" key="Volunteers" text="Our Volunteers"></ButtonMain>
                                 <ButtonMain path="/GetInvolved" key="GetInvolved" text="Get Involved"></ButtonMain>
                                 <ButtonMain path="/News" key="News" text="News"></ButtonMain>
-                                <ButtonMain path="/Sponsors" key="Sponsors" text="Sponsors"></ButtonMain>
                             </div>
                         </div>
                     </div>

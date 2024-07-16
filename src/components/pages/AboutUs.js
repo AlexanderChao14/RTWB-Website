@@ -94,7 +94,7 @@ const AboutUs = () => {
                     Co-Founder & Culture Creator
                     <br/>
                     <br/>
-                    <a key={"More Stories"} className="max-w-44 place-self-center bg-gray-900 text-white: text-gray-300 hover:bg-gray-700 hover:text-white, rounded-md px-3 py-2 text-sm font-medium" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
+                    <a key={"More Stories"} className="max-w-44 place-self-center bg-gray-900 text-gray-300 rounded-md px-3 py-2 text-sm font-medium hoverButton" href='https://drive.google.com/drive/u/0/folders/0B1xpscMQ_Xb1MmpOUWZFcmNYbmc?resourcekey=0-1n64kJUJ8ciOgCW127AN9g'>
                         View the full story and more stories.
                     </a>
                 </text>
@@ -137,15 +137,10 @@ const AboutUs = () => {
                                                                                                                                                                     Les is a published author in cardiopulmonary physiology and has lectured internationally on various topics in respiratory care. He established the Thompson Rivers University Sleep Clinic in 1998 and continues to be active as a clinician and researcher in the study of obstructive sleep apnea syndrome." 
                                                                                                                                                                 quote="&quot;I believe Respiratory Therapists can contribute significantly to global health. I have had an opportunity to see the difference Respiratory Therapists can make when they work independently or with medical staff in remote and under privileged locations. The need for our skill set is apparent to anyone that looks closely at communities around the world both in urban and remote locations. It is for this reason I think RTWB is an important organization and has the potential for making a difference in peoples lives anywhere in the world.&quot;"/>
                         <MemberInfoCard name="Marilyn Hyndman" email="marilyn.hyndman@rtwb.ca" location="Toronto, Ontario" pic="images/marilyn-hyndman.jpg" desc="30 years neonatal RRT & 24 years neonatal respiratory educator at Sunnybrook. Taught and presented neonatal ventilation (invasive and non invasive) internationally over many years. 
-
                                                                                                                                                                 NRP intructor trainer
-
                                                                                                                                                                 STABLE instuctor
-
                                                                                                                                                                 ORCS research and fellowship grants committee
-
                                                                                                                                                                 Steering committee NRP Canada (CSRT representative)
-
                                                                                                                                                                 NRP research subcommittee" />
                         <MemberInfoCard name="Mo Shariff" email="mo.shariff@rtwb.ca" pic="images/mo-shariff.png" quote="&quot;Mo graduated from Respiratory Therapy school in 1986. Two years later he ventured into Anesthesia and Respiratory medical equipment enterprise.  Mo started his own company, CAREstream Medical where he became CEO. After 20 years the company grew to employ close to a hundred people across North America. In 2014, Mo was the recipient of a life time achievement award at the Canadian Society of Respiratory Therapists (CSRT). In 2014, Mo needed to take time away to focus on health and well-being. Mo’s involvement in RTWB is his way of giving back to the community.&quot;" />
                         <MemberInfoCard name="Rob Bryan" email="rob.bryan@rtwb.ca" location="North York, Ontario" pic="images/no-pfp.jpg" desc="Rob Bryan is a licensed health care professional practicing in Anaesthesia Care, Adult and Neonatal Critical Care and Emergency Medicine. He is a staff Registered Respiratory Therapist and Anaesthesia Assistant at a community hospital in Richmond Hill, Ontario and a Paramedic with York Region Emergency Medical Services. He has extensive experience and current evidence based knowledge in anaesthetic care standards including clinical, technical and equipment standards, point of care lab testing, and air quality/OR pollution control quality assurance programming. 
@@ -159,42 +154,54 @@ const AboutUs = () => {
             
             <section>
                 <div className="mx-auto max-w-screen-2xl items-center flex flex-col text-center">
-
-                    <CardHeading>Our Mission</CardHeading>
-                    <TextMedium>Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>
-                    <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
-
-                        <CardHeading>Culture</CardHeading>
-                        <TextMedium>RTWB/ISF is rooted in the skills, knowledge and expertise respiratory therapists have to offer the world. Together respiratory therapists from around the globe stand proudly as allied health professionals with a culture of giving back to the global community. 
-                                    <br/><br/>
-                                    RTWB/ISF is a collaborative project to educate and empower health care practitioners initiated by concerned Respiratory Therapists around the globe. The primary drive is you - the experts in airway, ventilatory and oxygen management. Respiratory therapy is at the infancy stage of our profession. 
-                                    As such, the time is now to set precedence and establish ourselves in the global marketplace. This is our chance to advocate for our profession worldwide. Join us in sharing our skills/knowledge/expertise with a hungry world!
-                        </TextMedium>
+                    <div className='flex w-full items-center justify-center content-center '>
+                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 '>
+                            <CardHeading>Our Mission</CardHeading>
+                            <TextMedium>Improve respiratory health through educational advancement of local healthcare providers worldwide.</TextMedium>
+                        </div>
+                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8'>
+                            <CardHeading>Vision</CardHeading>
+                            <TextMedium>Create a culture of 'giving back' synonymous with Respiratory Therapists.</TextMedium>
+                        </div>
                     </div>
-                    <CardHeading>Vision</CardHeading>
-                    <TextMedium>Create a culture of 'giving back' synonymous with Respiratory Therapists.</TextMedium>
+                </div>
+            </section>
+            <section>
+                <div className='mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
+                    <CardHeading className='text-center'>Culture</CardHeading>
+                    <TextMedium>RTWB/ISF is rooted in the skills, knowledge and expertise respiratory therapists have to offer the world. Together respiratory therapists from around the globe stand proudly as allied health professionals with a culture of giving back to the global community. 
+                                <br/><br/>
+                                RTWB/ISF is a collaborative project to educate and empower health care practitioners initiated by concerned Respiratory Therapists around the globe. The primary drive is you - the experts in airway, ventilatory and oxygen management. Respiratory therapy is at the infancy stage of our profession. 
+                                As such, the time is now to set precedence and establish ourselves in the global marketplace. This is our chance to advocate for our profession worldwide. Join us in sharing our skills/knowledge/expertise with a hungry world!
+                    </TextMedium>
                 </div>
             </section>
             <section>
                 <div className="mx-auto max-w-screen-2xl items-center flex flex-col text-center">
                     <CardHeading>Our Values</CardHeading>
-                    <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
-                        <text className='text-3xl'>Compassion</text>
-                        <TextMedium>
-                            We emphasize CARE within healtcare.<br/><br/>
-                            The respiratory therapists culture is one of giving back without any compensation - realising that there is no monetary equivalent for the life-saving services we are privileged to provide from the heart.
-                        </TextMedium>
-                    </div>
-                    <text className='text-3xl'>Integrity</text>
-                    <TextMedium>
-                        We exercise skills, knowledge and judgement in critical situations to provide the best CARE for patients.<br/>
-                        As we emphasis on sustainable developments through education, our representatives believe in teaching the proverbial art of fishing for locals instead of catching fish for them. 
-                    </TextMedium>
-                    <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100'>
-                        <text className='text-3xl'>Innovation</text>
-                        <TextMedium>
-                            Many of the deployment sites at RTWB/ISF will be severely resource limited and require creative juices, RTWB/ISF builds bridges with non-healthcare related partnerships to gain new perspectives and innovate custom solutions for local healthcare needs.
-                        </TextMedium>
+                    <div className='flex w-full items-center justify-center'>
+
+                        <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-2/6 h-5/6 content-center'>
+                            <text className='text-3xl'>Compassion</text>
+                            <TextMedium>
+                                We emphasize CARE within healtcare.<br/><br/>
+                                The respiratory therapists culture is one of giving back without any compensation - realising that there is no monetary equivalent for the life-saving services we are privileged to provide from the heart.
+                            </TextMedium>
+                        </div>
+                        <div className='mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-2/6 h-5/6 content-center'>
+
+                            <text className='text-3xl'>Integrity</text>
+                            <TextMedium>
+                                We exercise skills, knowledge and judgement in critical situations to provide the best CARE for patients.<br/>
+                                As we emphasis on sustainable developments through education, our representatives believe in teaching the proverbial art of fishing for locals instead of catching fish for them. 
+                            </TextMedium>
+                        </div>
+                        <div className=' mx-auto m-10 max-w-screen-2xl px-2 sm:px-6 lg:px-8 bg-blue-100 w-2/6 h-5/6 content-center'>
+                            <text className='text-3xl'>Innovation</text>
+                            <TextMedium>
+                                Many of the deployment sites at RTWB/ISF will be severely resource limited and require creative juices, RTWB/ISF builds bridges with non-healthcare related partnerships to gain new perspectives and innovate custom solutions for local healthcare needs.
+                            </TextMedium>
+                        </div>
                     </div>
                 </div>
             </section>

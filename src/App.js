@@ -7,6 +7,7 @@ import Layout from './layout/Layout'
 import Home from './components/pages/Home'
 import AboutUs from './components/pages/AboutUs'
 import GetInvolved from './components/pages/GetInvolved'
+import Volunteers from './components/pages/Volunteers'
 import GetDeployed from './components/pages/GetDeployed'
 import HealthEducationPartner from './components/pages/HealthEducationPartner'
 import Board from './components/pages/Board'
@@ -23,7 +24,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout/>}>
               <Route path="/AboutUs" element={<AboutUs/>}/>
-              <Route path="/GetInvolved" element={<GetInvolved/>}/>
+              <Route path="/Volunteers" element={<Volunteers/>}/>
+              <Route path="/GetInvolved/" element={<GetInvolved/>}/>
               <Route path="/GetDeployed" element={<GetDeployed/>}/>
               <Route path="/HealthEducationPartner" element={<HealthEducationPartner/>}/>
               <Route path="/Board" element={<Board/>}/>

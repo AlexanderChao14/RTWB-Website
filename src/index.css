@@ -59,7 +59,7 @@ a {
 
 /* The large section before all the content on the landing page. */
 .landing-intro {
-  background: url("../public/images/intro-photo.JPG") rgba(3, 126, 227, 0.864);
+  background: url("../public/images/intro-photo.JPG");
   background-size: auto;
   background-position-y: 25%;
   background-position-x: 40%;
@@ -69,7 +69,7 @@ a {
 
 @media screen and (min-width:2048px ){
   .landing-intro{
-  background: url("../public/images/intro-photo.JPG") rgba(227, 149, 3, 0.864);
+  background: url("../public/images/intro-photo.JPG");
   background-size:cover;
   background-position-y: 25%;
   background-position-x: 40%;
@@ -195,6 +195,26 @@ a {
 /* Teams Flexbox area for get Involved page */
 .teamsFlex {
   padding: 10px 0px;
+}
+
+.navLogo {
+  transition: all .2s ease-in-out;
+}
+
+.navLogo:hover{
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 13px -7px #505050, 3px 3px 3px 3px rgba(0,0,0,0.51); 
+  box-shadow:0px 10px 13px -7px 	#505050, 3px 3px 3px 3px rgba(0,0,0,0.51)
+}
+
+.hoverButton{
+  transition: all .2s ease-in-out;
+}
+
+.hoverButton:hover{
+  transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 13px -7px #505050, 3px 3px 3px 3px rgba(0,0,0,0.51); 
+  box-shadow:0px 10px 13px -7px 	#505050, 3px 3px 3px 3px rgba(0,0,0,0.51)
 }
 
 .teamsCard {

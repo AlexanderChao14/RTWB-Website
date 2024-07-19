@@ -1,4 +1,5 @@
 import React from "react";
+import { TextMedium, TextSmall, TextSmallLink } from "./styled/TextStyles";
 
 const Footer  = () =>{
     return(
@@ -31,6 +32,10 @@ const Footer  = () =>{
                         <li><a href="AboutUs" key="About Us">Email</a></li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="flex justify-center pb-4">
+                <TextSmall>Website developed by <TextSmallLink href="https://alexander-chao.vercel.app/">Alexander Chao</TextSmallLink> and <TextSmallLink href="http://joshngo.click/">Joshua Ngo</TextSmallLink></TextSmall>
             </div>
         </div>
     )

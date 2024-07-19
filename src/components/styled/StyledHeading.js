@@ -10,7 +10,8 @@ export const StyledHeading = styled.h1`
 export const CardHeading = styled.h1`
   font-size: 36px;
   font-weight: 700;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
 `;
 
 export const AboutUsHeading = styled.h2`

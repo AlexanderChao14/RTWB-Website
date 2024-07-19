@@ -271,7 +271,7 @@ a {
 
 /* The footer object for all webpages */
 .footer { 
-  min-height: 300px;
+  min-height: 200px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   justify-content: center;

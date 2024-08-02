@@ -75,13 +75,13 @@ const AboutUs = () => {
                     I'd like to thank each of&nbsp; 
 
                     {/* TODO either add a volunteer page or remove this link */}
-                    <a href="" className='underline underline-offset-1 text-blue-600 font-medium'>
+                    <a href="/Volunteers" className='underline underline-offset-1 text-blue-600 font-medium'>
                         our volunteers
                     </a>
                     &nbsp;in the global RTWB Professional Network and generous&nbsp; 
 
                      {/* TODO redirect to the sponsors page after sponsors page is made */}
-                    <a className='underline underline-offset-1 text-blue-600 font-medium'>
+                    <a href="/Sponsors" className='underline underline-offset-1 text-blue-600 font-medium'>
                         sponsors 
                     </a>
                     &nbsp;for making RTWB possible. 

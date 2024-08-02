@@ -43,13 +43,13 @@ const Home = () => {
             {/* Eric's Section */}
             <section className="sectioncolor-dark">
                 <div className="container-grid grid-cols-left mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8">
-                    <div className="flex flex-col justify-center items-center min-w-80 max-w-sm w-3/5 h-auto max-h-96 justify-self-center shadow-bl">
-                        <img src="images/eric-cheng-large.png" className="h-full w-full object-cover"/>
+                    <div className="flex flex-col justify-center items-center min-w-96 max-w-sm w-3/5 h-auto max-h-96 justify-self-center">
+                        <img src="images/hep-cycle.png" className="h-full w-full object-contain"/>
                     </div>
                     <div className="flex flex-col justify-center items-left mx-4 p-4 bg-themeLightblue border-right border-bl shadow-full-bl">
-                        <TextMedium>Our vision is to create a culture of respiratory therapy synonymous with 'giving back'. Just like the respiratory therapy profession, RTWB finds its roots in people filled with compassion for others, work with integrity and innovate to work smarter. We believe in hard work, but more importantly working smart and strategically to bring about sustainable change to improve respiratory health through educational advancement of local healthcare providers worldwide. </TextMedium>
-                        <TextMediumBold className="pt-5">Eric Cheng</TextMediumBold>
-                        <TextMediumBold>Co-Founder & Culture Creator</TextMediumBold>
+                        <TextMediumBold>Healthcare Education Partners</TextMediumBold>
+                        <TextMedium>RTWB works exclusively with Healthcare Education Partner (HEP) sites. This is to ensure that there is a respiratory need that RTWB/ISF can address with a deployment. Learn how to become a healthcare partner and work alongside us.</TextMedium>
+                        <ButtonMain path="/HealthEducationPartner" key="HealthEducationPartner" text="Learn More"></ButtonMain>
                     </div>
                 </div>
 
@@ -59,19 +59,19 @@ const Home = () => {
             <section className="sectioncolor-light">
                 <FlexboxColumnCenter className="updatesContainer container mx-auto max-w-screen-2xl px-2 sm:px-6 lg:px-8 w-full">
                     {/* <SectionHeading className="text-center">Updates and More</SectionHeading> */}
-                    <div className="updatesGrid">
+                    <div className="updatesGrid border-b-slate-300 border-b-4 pb-10">
 
-                        <InfoCard img="images/teams-logo.png" title="Meet the team" desc="Learn more about our incredible team." path="/AboutUs" key="About Us"></InfoCard>
+                        <InfoCard img="images/facebook-logo.png" title="Facebook Community" desc="Learn more about our incredible team." path="https://www.facebook.com/RTWBCA/" key="About Us"></InfoCard>
 
-                        <InfoCard img="images/world-logo.png" title="Where we Work" desc="See where our charity is deployed around the world." path="/WhereWeWork" key="WhereWeWork"></InfoCard>
+                        <InfoCard img="images/linked-in-logo.png" title="LinkedIn" desc="See where our charity is deployed around the world." path="https://www.linkedin.com/company/respiratory-therapists-without-borders/" key="WhereWeWork"></InfoCard>
 
-                        <InfoCard img="images/megaphone-logo.png" title="Updates and News" desc="See our latest milestones and news." path="/News" key="News"></InfoCard>
+                        <InfoCard img="images/megaphone-logo.png" title="Updates" desc="See our latest milestones and news." path="/News" key="News"></InfoCard>
                         
-                        <InfoCard img="images/handshake-logo.png" title="Sponsors" desc="Our gratitude for these amazing people." path="/Sponsors" key="Sponsors"></InfoCard>
+                        {/* <InfoCard img="images/handshake-logo.png" title="Sponsors" desc="Our gratitude for these amazing people." path="/Sponsors" key="Sponsors"></InfoCard> */}
                         
-                        <InfoCard img="images/volunteer-logo.png" title="Volunteering" desc="See our volunteering community." path="/GetDeployed" key=""></InfoCard>
+                        {/* <InfoCard img="images/volunteer-logo.png" title="Volunteering" desc="See our volunteering community." path="/GetDeployed" key=""></InfoCard> */}
 
-                        <InfoCard img="images/heart-logo-png.png" title="Healthcare Partners" desc="People we work with." path="HealthEducationPartner" key=""></InfoCard>
+                        {/* <InfoCard img="images/heart-logo-png.png" title="Healthcare Partners" desc="People we work with." path="HealthEducationPartner" key=""></InfoCard> */}
                     </div>
                 </FlexboxColumnCenter>
             </section>

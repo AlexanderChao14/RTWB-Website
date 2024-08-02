@@ -28,7 +28,8 @@ const Footer  = () =>{
                 <div className="footerCard">
                     <p className = "listHeader">Get In Touch</p>
                     <ul className = "footerList">
-                        <li><a href="">Facebook</a></li>
+                        <li><a href="https://www.facebook.com/RTWBCA/">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/respiratory-therapists-without-borders/">LinkedIn</a></li>
                         <li><a href="AboutUs" key="About Us">Email</a></li>
                     </ul>
                 </div>
